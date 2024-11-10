@@ -3,7 +3,7 @@
 title: Manas Vishal
 
 # Name pronunciation (optional)
-name_pronunciation: Manas Vishal
+name_pronunciation: ''
 
 # Full name (for SEO)
 first_name: Manas
@@ -47,15 +47,16 @@ profiles:
     url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
-
+  - High Performance Computing
+  - (Numerical) General Relativity
+  - Data Science and Visualization
+  - Computational Physics
+  
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: PhD Computational Sciences and Engineering
+    institution: University of Massachusetts Dartmouth
+    date_start: 2021-09-01
+    date_end: current
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
@@ -183,4 +184,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Manas Vishal is a PhD candidate in Computational Sciences and Engineering at UMass Dartmouth, specializing in gravitational wave modeling and high-performance computing. With a background in Physics from IISER Kolkata, his work advances gravitational wave science, focusing on black hole simulations and data-intensive research. Beyond academia, he enjoys coding, photography, and exploring history and geopolitics.

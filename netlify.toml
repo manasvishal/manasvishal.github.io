@@ -19,3 +19,9 @@
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]
     debug = true
+    
+      
+[module]
+  [module.hugoVersion]
+	extended = true
+	min = '0.111.0'
