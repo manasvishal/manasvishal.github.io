@@ -76,7 +76,7 @@ education:
       - Advanced Numerical Methods
   
   - area: BS-MS Physical Sciences
-    institution: Indian Institute of Science Education and Research
+    institution: Indian Institute of Science Education and Research Kolkata
     date_start: 2016-08-19
     date_end: 2021-07-15
     summary: |
@@ -86,30 +86,68 @@ education:
       - General Relativity
       - Numerical and Mathematical Statistics
       - Computational Physics
-      
+
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Research Assistant
+    company_name: Center for Scientific Computing and Data Science Research, UMass Dartmouth, MA, USA
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2021-09-01
     date_end: ''
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - Formulated a robust mathematical model with a novel algorithm to simulate astrophysical binaries, resulting in increased accuracy and efficiency in simulation outcomes with enhanced performance and scalability
+      - Optimized MATLAB code prototype, achieving a runtime speedup of 90 times and a 100,000,000 fold improvement in accuracy compared to the current state of the art.
+      - Mentored junior researchers in quantitative skills for black hole simulations, contributing to their growth and project success.
+
+  - position: Lead Python Programmer 
+    company_name: Self Employed
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2024-06-01
+    date_end: 2024-08-31
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Developed a Gaussian Process Regression (GPR surrogate model, reducing computation time by ~85% (making it 6.67 times faster) while maintaining an accuracy of over 98% for derivative pricing compared to traditional models like Black-Scholes.
+      - Applied GPR for fast approximation of complex financial models, enhancing portfolio optimization and risk assessment by delivering results significantly faster.
+      - Integrated uncertainty quantification into financial forecasts, enabling more robust decision-making under market volatility and improving prediction reliability.
+
+  - position: Lead Programmer and Data Analyst
+    company_name: Self Employed
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-01-01
+    date_end: 2024-04-30
+    summary: |
+      Responsibilities include:
+      - Led a team of three in analyzing credit card fraud data using R and Python, resulting in the identification of fraudulent transactions and improved fraud detection capabilities.
+      - Developed a codebase utilizing R and Python libraries (Conda,scikit-learn, numpy, pandas, seaborn, matplotlib) to conduct predictive analysis and classify time series data for fraudulent transactions, streamlining data processing and analysis workflows.
+      - Trained artificial intelligence and machine learning models, including XGBoost, Logistic Regression, Decision Tree, and Neural Networks, on the dataset, enhancing model accuracy and performance in fraud detection and benchmarked the models quantitatively using different metrics.
+
+  - position: Software Developer and Data Scientist
+    company_name: Albert Einstein Institute, Max Planck Institute of Gravitational Physics, Potsdam, Germany
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-06-01
+    date_end: 2023-07-30
+    summary: |
+      Responsibilities include:
+      - Accelerated the simulation time of binary black holes using a data driven approach
+      - Analyzed time series datasets in frequency domain for a faster and efficient surrogate approach
+      - Refined the algorithms to enhance performance to generate black hole physics data 6 times faster
+
+  - position: High Performance Computing Student Facilitator
+    company_name: Center for Research Computing, Yale University, CT, USA
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-05-01
+    date_end: 2023-06-30
+    summary: |
+      Responsibilities include:
+      - Translated a prototype code into an efficient C++ codebase, utilizing Git for version control.
+      - Benchmarked and profiled C++ codebase across multiple platforms by deploying high performance computing techniques.
+      - Implemented unit and regression tests to ensure codebase reliability and functionality
+      - Deployed Bash scripts for MPI and Slurm jobs on different Linux clusters, one of them being the new MGHPCC cluster Unity.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
