@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Manas Vishal
+title: Manas Vishal 
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -31,20 +31,20 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:vishalmanas28@gmail.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: https://twitter.com/manas_vishal
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/manas_vishal.jpg
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/manasvishal
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/manasvishal/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=3OqgvO8AAAAJ
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0000-0003-3424-3505
 
 interests:
   - High Performance Computing
@@ -58,32 +58,35 @@ education:
     date_start: 2021-09-01
     date_end: ''
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Thesis on _Simulation of Compact Astrophysical Binaries_. Supervised by [Dr. Scott Field](http://www.math.umassd.edu/~sfield/?_gl=1*e6rzl8*_gcl_au*MjcwMzkwNjUwLjE3Mjc0NTQ5NzQ.) and [Dr. Gaurav Khanna](https://web.uri.edu/physics/meet/gaurav-khanna/). Presented papers at many international conferences with the contributions being published in 1 PRD.
     button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      text: 'Read Paper'
+      url: 'https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.104009'
+  - area: MS Data Science
+    institution: University of Massachusetts Dartmouth
+    date_start: 2024-01-01
+    date_end: ''
     summary: |
-      GPA: 3.8/4.0
+      GPA: 4.0/4.0
 
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      - High Performance Computing
+      - Advanced Machine Learning
+      - Database Systems
+      - Advanced Numerical Methods
+  
+  - area: BS-MS Physical Sciences
+    institution: Indian Institute of Science Education and Research
+    date_start: 2016-08-19
+    date_end: 2021-07-15
     summary: |
-      GPA: 3.4/4.0
+      GPA: 8.5/10.0
       
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - General Relativity
+      - Numerical and Mathematical Statistics
+      - Computational Physics
+      
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
