@@ -19,18 +19,34 @@ sections:
         text: Download CV
         url: https://texlive2020.latexonline.cc/compile?git=https://github.com/manasvishal/CV_ManasVishal&target=CV_Manas.tex&command=xelatex
       
+    # design:
+    #   css_class: light
+    #   background:
+    #     color: black
+    #     image:
+    #       # Add your image background to `assets/media/`.
+    #       filename: stacked-peaks.svg
+    #       # filename: use-svg-as-background-image-particle-strokes.svg
+    #       filters:
+    #         brightness: 1.0
+    #       size: cover
+    #       position: center
+    #       parallax: false
+
     design:
       css_class: dark
       background:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
+          # filename: stacked-peaks.svg
+          filename: use-svg-as-background-image-particle-strokes.svg
           filters:
             brightness: 1.0
           size: cover
           position: center
-          parallax: false
+          parallax: true
+      
   - block: markdown
     content:
       title: '📚 My Research'
@@ -43,6 +59,7 @@ sections:
         Please reach out to collaborate 😃
     design:
       columns: '1'
+      
   # - block: collection
   #   id: papers
   #   content:
