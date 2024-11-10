@@ -39,6 +39,7 @@ header:
 
 # Site footer
 footer:
+  enable: false
   copyright:
     notice: '© {year} Me. This work is licensed under {license}'
     license:
@@ -55,6 +56,6 @@ locale:
 # Site features
 features:
   math:
-    enable: false
+    enable: true
   privacy_pack:
     enable: false
