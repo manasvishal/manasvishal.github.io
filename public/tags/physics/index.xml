@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Physics | Manas Vishal</title>
-    <link>http://localhost:37139/tags/physics/</link>
-      <atom:link href="http://localhost:37139/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:37609/tags/physics/</link>
+      <atom:link href="http://localhost:37609/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     <description>Physics</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:37139/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:37609/media/icon_hu7729264130191091259.png</url>
       <title>Physics</title>
-      <link>http://localhost:37139/tags/physics/</link>
+      <link>http://localhost:37609/tags/physics/</link>
     </image>
     
     <item>
       <title>Dicscontinuous Galerkin Methods</title>
-      <link>http://localhost:37139/project/dg/</link>
+      <link>http://localhost:37609/project/dg/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:37139/project/dg/</guid>
+      <guid>http://localhost:37609/project/dg/</guid>
       <description>&lt;p&gt;A high-performance project leveraging the Discontinuous Galerkin (DG) method to achieve superconvergence in gravitational wave simulations through efficient computational modeling.&lt;/p&gt;</description>
     </item>
     
