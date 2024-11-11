@@ -26,7 +26,7 @@ sections:
     #     image:
     #       # Add your image background to `assets/media/`.
     #       filename: stacked-peaks.svg
-    #       # filename: use-svg-as-background-image-particle-strokes.svg
+    #       # filename: morphing-animation-trends.svg
     #       filters:
     #         brightness: 1.0
     #       size: cover
@@ -42,7 +42,7 @@ sections:
           # filename: stacked-peaks.svg
           filename: use-svg-as-background-image-particle-strokes.svg
           filters:
-            brightness: 1.0
+            brightness: 0.7
           size: cover
           position: center
           parallax: true
@@ -58,8 +58,18 @@ sections:
         
         Please reach out to collaborate 😃
     design:
-      columns: '1'
-      
+      css_class: dark
+      background:
+        color: black
+        image:
+          # Add your image background to `assets/media/`.
+          # filename: stacked-peaks.svg
+          filename: use-svg-as-background-image-particle-strokes.svg
+          filters:
+            brightness: 0.7
+          size: cover
+          position: center
+          parallax: true
   # - block: collection
   #   id: papers
   #   content:

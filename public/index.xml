@@ -7,7 +7,7 @@
     <description>Manas Vishal</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:37609/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:37609/media/icon_hu12677917447461260747.png</url>
       <title>Manas Vishal</title>
       <link>http://localhost:37609/</link>
     </image>
@@ -128,7 +128,7 @@
     </item>
     
     <item>
-      <title>Dicscontinuous Galerkin Methods</title>
+      <title>Discontinuous Galerkin Methods</title>
       <link>http://localhost:37609/project/dg/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:37609/project/dg/</guid>
