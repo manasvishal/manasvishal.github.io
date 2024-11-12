@@ -1,9 +1,10 @@
 ---
-title: Di scontinuous Galerkin Methods
-date: 2023-10-26
+title: Discontinuous Galerkin Methods
+date: 2021-09-01
 external_link: https://arxiv.org/abs/2307.01349
 tags:
   - DG
+  - EMRI
   - Physics
 ---
 
