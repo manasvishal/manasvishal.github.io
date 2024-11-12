@@ -128,11 +128,11 @@
     </item>
     
     <item>
-      <title>Discontinuous Galerkin Methods</title>
+      <title>Di scontinuous Galerkin Methods</title>
       <link>http://localhost:37609/project/dg/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:37609/project/dg/</guid>
-      <description>&lt;p&gt;A high-performance project leveraging the Discontinuous Galerkin (DG) method to achieve superconvergence in gravitational wave simulations through efficient computational modeling.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A high-performance computing project leveraging the Discontinuous Galerkin (DG) method to achieve superconvergence in gravitational wave simulations through efficient computational modeling.&lt;/p&gt;</description>
     </item>
     
     <item>
