@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhD | Manas Vishal</title>
+    <link>http://localhost:1313/tags/phd/</link>
+      <atom:link href="http://localhost:1313/tags/phd/index.xml" rel="self" type="application/rss+xml" />
+    <description>PhD</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
+      <title>PhD</title>
+      <link>http://localhost:1313/tags/phd/</link>
+    </image>
+    
+    <item>
+      <title>👋 Personal Portfolio Website Workshop!</title>
+      <link>http://localhost:1313/post/website-building-workshop/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/website-building-workshop/</guid>
+      <description>&lt;p&gt;Collecting some sources I found across internet about Indians and their presence across Asia trading with locals.&lt;/p&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;h3 id=&#34;indians-in-central-asia&#34;&gt;Indians in Central Asia:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jstor.org/stable/4311298&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JSTOR: Indians in Central Asia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://theprint.in/opinion/security-code/forgotten-story-of-great-hindu-merchants-in-central-asia-shows-enterprise-can-defeat-china/1132477/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Print: Forgotten Story of Great Hindu Merchants in Central Asia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://assets.cambridge.org/97805214/54605/sample/9780521454605ws.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cambridge University Press: Sample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;indians-in-indian-ocean-trade&#34;&gt;Indians in Indian Ocean Trade:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.thoughtco.com/indian-ocean-trade-routes-195514&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ThoughtCo: Indian Ocean Trade Routes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jstor.org/stable/23011677&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JSTOR: Indian Ocean Trade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jstor.org/stable/44142052&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JSTOR: Brahmins Travelled Across the Seas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.worldhistory.org/article/1800/indian-ocean-trade-before-the-european-conquest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;World History Encyclopedia: Indian Ocean Trade Before the European Conquest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://maritimeindia.org/the-case-for-indias-seafaring-legacy-ancient-indian-shipbuilding/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maritime India: The Case for India&amp;rsquo;s Seafaring Legacy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

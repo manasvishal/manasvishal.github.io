@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/hugo/</link>
       <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <description>Hugo</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>Hugo</title>
@@ -13,211 +13,186 @@
     </image>
     
     <item>
-      <title>📈 Communicate your results effectively with the best data visualizations</title>
-      <link>http://localhost:1313/post/first-blog/</link>
-      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/first-blog/</guid>
-      <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
-&lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
-&lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
-&lt;p&gt;Hugo Blox supports the popular &lt;a href=&#34;https://plot.ly/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly&lt;/a&gt; format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!&lt;/p&gt;
-&lt;p&gt;Save your Plotly JSON in your page folder, for example &lt;code&gt;line-chart.json&lt;/code&gt;, and then add the &lt;code&gt;{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code&gt; shortcode where you would like the chart to appear.&lt;/p&gt;
-&lt;p&gt;Demo:&lt;/p&gt;
-
-
-
-
-&lt;div id=&#34;chart-326487519&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-  async function fetchChartJSON() {
-    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
-    const response = await fetch(&#39;.\/line-chart.json&#39;);
-    return await response.json();
-  }
-
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === &#39;undefined&#39; ) {
-        console.debug(&#39;Plotly not loaded yet...&#39;)
-        return;
-      }
-      clearInterval( a );
-
-      fetchChartJSON().then(chart =&gt; {
-        console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-326487519&#39;, chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
-&lt;/script&gt;
-
-&lt;p&gt;You might also find the &lt;a href=&#34;http://plotly-json-editor.getforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly JSON Editor&lt;/a&gt; useful.&lt;/p&gt;
-&lt;h2 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h2&gt;
-&lt;p&gt;Hugo Blox supports the &lt;em&gt;Mermaid&lt;/em&gt; Markdown extension for diagrams.&lt;/p&gt;
-&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;graph TD
-A[Hard] --&gt;|Text| B(Round)
-B --&gt; C{Decision}
-C --&gt;|One| D[Result 1]
-C --&gt;|Two| E[Result 2]
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
-Alice-&gt;&gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&gt;&gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&gt;&gt;Alice: Great!
-John-&gt;&gt;Bob: How about you?
-Bob--&gt;&gt;John: Jolly good!
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 &amp;lt;--&amp;gt; C2: Cool label
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;classDiagram
-Class01 &lt;|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --&gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 &lt;--&gt; C2: Cool label
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;stateDiagram
-[*] --&gt; Still
-Still --&gt; [*]
-Still --&gt; Moving
-Moving --&gt; Still
-Moving --&gt; Crash
-Crash --&gt; [*]
-&lt;/div&gt;
-&lt;h2 id=&#34;data-frames&#34;&gt;Data Frames&lt;/h2&gt;
-&lt;p&gt;Save your spreadsheet as a CSV file in your page&amp;rsquo;s folder and then render it by adding the &lt;em&gt;Table&lt;/em&gt; shortcode to your page:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;results.csv&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;caption&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Table 1: My results&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;table class=&#34;table-auto w-full&#34;&gt;
-  
-    
-    
-    &lt;thead&gt;
-      &lt;tr&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;customer_id&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;score&lt;/th&gt;  &lt;/tr&gt;
-    &lt;/thead&gt;
-  
-  &lt;tbody&gt;
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;0&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;2&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;0.5&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;3&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-  &lt;/tbody&gt;
-  
-    &lt;caption class=&#34;table-caption&#34;&gt;Table 1: My results&lt;/caption&gt;
-  
-&lt;/table&gt;
-
+      <title>🌐 Personal Portfolio Website Workshop!</title>
+      <link>http://localhost:1313/post/website-building-workshop/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/website-building-workshop/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-the-personal-portfolio-website-workshop-&#34;&gt;Welcome to the Personal Portfolio Website Workshop! 👋&lt;/h1&gt;
+&lt;p&gt;Hello, fellow PhD students! 🎓&lt;/p&gt;
+&lt;p&gt;This repository is here to help you build your personal academic portfolio website. By the end of this guide, you’ll have a beautiful, professional webpage to showcase your research, publications, and achievements. We’ll use &lt;strong&gt;HTML5 UP templates&lt;/strong&gt;, &lt;strong&gt;Jekyll&lt;/strong&gt;, or &lt;strong&gt;Hugo&lt;/strong&gt; to create a static website and deploy it to &lt;strong&gt;GitHub Pages&lt;/strong&gt; for free hosting.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;💡 &lt;em&gt;Feel free to choose the tools that best suit your skills and style. Each option has its own setup instructions.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Tip: My &lt;a href=&#34;https://manasvishal.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;webpage&lt;/a&gt; uses &lt;a href=&#34;https://github.com/HugoBlox/theme-academic-cv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic CV Template&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#prerequisites&#34;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-1-fork-and-clone-the-repository&#34;&gt;Step 1: Fork and Clone the Repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-2-choose-a-website-template&#34;&gt;Step 2: Choose a Website Template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-3-set-up-your-website-with-html5-up-jekyll-or-hugo&#34;&gt;Step 3: Set Up Your Website with HTML5 UP, Jekyll, or Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-4-customize-your-website&#34;&gt;Step 4: Customize Your Website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-5-deploy-to-github-pages&#34;&gt;Step 5: Deploy to GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#resources--tips&#34;&gt;Resources &amp;amp; Tips&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;Before we start, here are a few things you’ll need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Account:&lt;/strong&gt; Sign up if you haven’t already &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Git&lt;/strong&gt;: &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Download Git&lt;/a&gt; to version control your website.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code Editor&lt;/strong&gt;: Use a code editor like &lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VS Code&lt;/a&gt; or Atom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Optional but helpful&lt;/em&gt;: Familiarity with basic HTML, Markdown, or command line usage.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-1-fork-and-clone-the-repository&#34;&gt;Step 1: Fork and Clone the Repository&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fork this repository&lt;/strong&gt; to create a copy under your GitHub account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Clone the repository&lt;/strong&gt; to your local machine. Open a terminal and run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/yourusername/your-repo-name.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; your-repo-name
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now you’ll be able to work on your website locally!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-2-choose-a-website-template&#34;&gt;Step 2: Choose a Website Template&lt;/h3&gt;
+&lt;p&gt;You have three main options for building your portfolio. Choose the one that best fits your needs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;HTML5 UP Templates&lt;/strong&gt;: These are simple, beautiful HTML templates. Good for custom HTML/CSS.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;: A popular static site generator that works well with Markdown and GitHub Pages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hugo&lt;/strong&gt;: Another static site generator that’s fast and flexible, especially for complex sites.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: HTML5 UP templates provide raw HTML/CSS files, while Jekyll and Hugo generate static pages using Markdown and themes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-3-set-up-your-website-with-html5-up-jekyll-or-hugo&#34;&gt;Step 3: Set Up Your Website with HTML5 UP, Jekyll, or Hugo&lt;/h3&gt;
+&lt;h4 id=&#34;option-a-wordpress&#34;&gt;Option A: Wordpress&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to UMassD&amp;rsquo;s word press &lt;a href=&#34;https://sites.umassd.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Login with your UMassD&amp;rsquo;s credentials.&lt;/li&gt;
+&lt;li&gt;Choose a theme, add content and deploy the website.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;option-b-html5-up-templates&#34;&gt;Option B: HTML5 UP Templates&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://html5up.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTML5 UP&lt;/a&gt; and browse the templates. My &lt;a href=&#34;https://manasvishal.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;website&lt;/a&gt; uses &lt;a href=&#34;https://html5up.net/editorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Editorial theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download the template you like, unzip it, and move its contents to your cloned repository.&lt;/li&gt;
+&lt;li&gt;Customize the HTML and CSS to reflect your personal information.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;More resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Standalone picocss templates : &lt;a href=&#34;https://picocss.com/examples&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://picocss.com/examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;100 templates : &lt;a href=&#34;https://technext.github.io/100-template-bundle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://technext.github.io/100-template-bundle/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;option-c-jekyll&#34;&gt;Option C: Jekyll&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install Jekyll by following &lt;a href=&#34;https://jekyllrb.com/docs/installation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new Jekyll site:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jekyll new my-portfolio
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move your Jekyll site files into your cloned repository folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start a local server to preview:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bundle &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; jekyll serve
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access the site at &lt;code&gt;http://localhost:4000&lt;/code&gt; to see your progress.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;More resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A comprehensive guide:  &lt;a href=&#34;https://blog.christianposta.com/theme-setup/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://blog.christianposta.com/theme-setup/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Another one:  &lt;a href=&#34;https://www.pwills.com/posts/2017/12/20/website.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.pwills.com/posts/2017/12/20/website.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jamstackthemes.dev/theme/jekyll-professional-resume/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://jamstackthemes.dev/theme/jekyll-professional-resume/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jekyll-theme-minimal-resume.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://jekyll-theme-minimal-resume.netlify.app/&lt;/a&gt; &lt;a href=&#34;https://github.com/murraco/jekyll-theme-minimal-resume&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/murraco/jekyll-theme-minimal-resume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jamstackthemes.dev/theme/jekyll-online-cv/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://jamstackthemes.dev/theme/jekyll-online-cv/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ddbullfrog.github.io/resumecard/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://ddbullfrog.github.io/resumecard/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;option-d-hugo&#34;&gt;Option D: Hugo&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install Hugo by following &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new Hugo site:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site my-portfolio
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a theme from &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Themes&lt;/a&gt; and install it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move your Hugo site files into your cloned repository folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start a local server to preview:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visit &lt;code&gt;http://localhost:1313&lt;/code&gt; to view your website locally.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-4-customize-your-website&#34;&gt;Step 4: Customize Your Website&lt;/h3&gt;
+&lt;p&gt;Now it’s time to make the website yours! Here are a few things you’ll want to update:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Personal Information&lt;/strong&gt;: Update your name, photo, bio, and contact information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Research &amp;amp; Publications&lt;/strong&gt;: Add sections for your academic work, projects, and publications.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Social Media Links&lt;/strong&gt;: Add links to your LinkedIn, Twitter, or Google Scholar profiles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you&amp;rsquo;re using HTML5 UP, edit the HTML files directly. For Jekyll and Hugo, you’ll generally edit Markdown files in the &lt;code&gt;content&lt;/code&gt; or &lt;code&gt;_posts&lt;/code&gt; folders.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-5-deploy-to-github-pages&#34;&gt;Step 5: Deploy to GitHub Pages&lt;/h3&gt;
+&lt;p&gt;Once you’re happy with your website, it’s time to deploy!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Commit and push your changes to your GitHub repository:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;Initial website setup&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enable GitHub Pages&lt;/strong&gt; in your repository settings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to your repository on GitHub.&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Settings&lt;/strong&gt; &amp;gt; &lt;strong&gt;Pages&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;Source&lt;/strong&gt;, choose the &lt;code&gt;main&lt;/code&gt; branch and save.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After a few minutes, your site will be live at &lt;code&gt;https://yourusername.github.io/your-repo-name&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;More resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.arnoudplantinga.nl/post/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.arnoudplantinga.nl/post/getting-started/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://matteocourthoud.github.io/post/website/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://matteocourthoud.github.io/post/website/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lakemper.eu/blog/getting-started-with-hugo-academic-and-github-pages/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://lakemper.eu/blog/getting-started-with-hugo-academic-and-github-pages/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: If using Jekyll or Hugo, make sure your &lt;code&gt;_config.yml&lt;/code&gt; or &lt;code&gt;config.toml&lt;/code&gt; file is configured correctly for GitHub Pages.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;resources--tips&#34;&gt;Resources &amp;amp; Tips&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HTML5 UP Documentation&lt;/strong&gt;: &lt;a href=&#34;https://html5up.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTML5 UP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jekyll Documentation&lt;/strong&gt;: &lt;a href=&#34;https://jekyllrb.com/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jekyll Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hugo Documentation&lt;/strong&gt;: &lt;a href=&#34;https://gohugo.io/documentation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For help, reach out in the Slack channel or DM.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;final-words&#34;&gt;Final Words&lt;/h3&gt;
+&lt;p&gt;Congratulations on setting up your academic portfolio website! 🎉 This website will help showcase your work to the world, so feel free to iterate and improve it over time.&lt;/p&gt;
+&lt;p&gt;Happy coding, and best of luck with your research!&lt;/p&gt;
 &lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
 </description>
     </item>
@@ -237,7 +212,7 @@ Crash --&gt; [*]
 
 
 
-&lt;div id=&#34;chart-179685432&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-218974653&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -255,7 +230,7 @@ Crash --&gt; [*]
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-179685432&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-218974653&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

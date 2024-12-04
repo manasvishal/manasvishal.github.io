@@ -1,0 +1,136 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/content",
+      "title": "content"
+    },
+    {
+      "title": "teaching",
+      "path": "[[workspace]]/content/teaching"
+    },
+    {
+      "title": "publication",
+      "path": "[[workspace]]/content/publication"
+    },
+    {
+      "title": "post",
+      "path": "[[workspace]]/content/post"
+    },
+    {
+      "title": "event",
+      "path": "[[workspace]]/content/event"
+    },
+    {
+      "title": "authors",
+      "path": "[[workspace]]/content/authors"
+    },
+    {
+      "title": "archives",
+      "path": "[[workspace]]/content/archives"
+    },
+    {
+      "title": "python",
+      "path": "[[workspace]]/content/teaching/python"
+    },
+    {
+      "title": "js",
+      "path": "[[workspace]]/content/teaching/js"
+    },
+    {
+      "title": "preprint",
+      "path": "[[workspace]]/content/publication/preprint"
+    },
+    {
+      "title": "journal-article",
+      "path": "[[workspace]]/content/publication/journal-article"
+    },
+    {
+      "title": "conference-paper",
+      "path": "[[workspace]]/content/publication/conference-paper"
+    },
+    {
+      "title": "Surrogates",
+      "path": "[[workspace]]/content/project/Surrogates"
+    },
+    {
+      "title": "DG",
+      "path": "[[workspace]]/content/project/DG"
+    },
+    {
+      "title": "teach-courses",
+      "path": "[[workspace]]/content/post/teach-courses"
+    },
+    {
+      "title": "second-brain",
+      "path": "[[workspace]]/content/post/second-brain"
+    },
+    {
+      "title": "project-management",
+      "path": "[[workspace]]/content/post/project-management"
+    },
+    {
+      "title": "get-started",
+      "path": "[[workspace]]/content/post/get-started"
+    },
+    {
+      "title": "data-visualization",
+      "path": "[[workspace]]/content/post/data-visualization"
+    },
+    {
+      "title": "example",
+      "path": "[[workspace]]/content/event/example"
+    },
+    {
+      "title": "admin",
+      "path": "[[workspace]]/content/authors/admin"
+    }
+  ],
+  "frontMatter.git.enabled": true
+}

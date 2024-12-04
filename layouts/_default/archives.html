@@ -64,7 +64,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: -10px;
+    left: -9.1px;
     width: 15px;
     height: 15px;
     background: #007acc;
@@ -74,7 +74,7 @@
 .timeline-content {
     margin-left: 20px;
     padding: 10px 15px;
-    background: #f9f9f9;
+    background: transparent;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -116,12 +116,22 @@
             </div>
             <div class="timeline-posts">
                 <ul>
-                    {{ range sort .Pages "PublishDate" "asc" }}
+                    {{ range sort .Pages "PublishDate" "desc" }}
                     <li class="timeline-item">
                         <div class="timeline-content">
-                            <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}">
+                            <p><time style="color :#666" datetime="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}">
                                 {{ .PublishDate.Format "January 2" }}
                             </time>
+                            <span style="color :#666"> | {{ .ReadingTime }} min read</span>
+                            <span style="color :#666"> | {{ .WordCount }} words</span>
+                            {{ with .Params.tags }}
+                            <span style="color :#666"> | Tags: 
+                                {{ range . }}
+                                    <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}" style="font-size:small;color: #666;">#{{ . }}</a>{{ if not (eq (index . (sub (len .) 1)) .) }} {{ end }}
+                                {{ end }}
+                            </span>
+                            {{ end }}
+                            </p>
                             <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
                         </div>
                     </li>
