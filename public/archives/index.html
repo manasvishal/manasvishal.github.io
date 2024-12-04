@@ -436,8 +436,6 @@
   
   
   
-  
-  
 
 
 
@@ -873,7 +871,7 @@
     position: relative;
     margin: 40px 0;
     padding: 0;
-    border-left: 4px solid #007acc;
+    border-left: 2px solid #6ee7b7;
 }
 
 .timeline-group {
@@ -886,11 +884,12 @@
     top: 0;
     left: 10px;
     font-size: 1rem;
-    color: #007acc;
+    color: #6ee7b7;
     background: transparent;
     padding: 5px 10px;
     border-radius: 0px;
     border: 0px solid #007acc;
+    cursor: pointer;
 }
 
  
@@ -908,12 +907,13 @@
 .timeline-item:before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: -9.1px;
-    width: 15px;
-    height: 15px;
-    background: #007acc;
+    top: 40%;
+    left: -8px;
+    width: 14px;
+    height: 14px;
+    background: #087e5c;
     border-radius: 50%;
+    opacity: 75%;
 }
 
 .timeline-content {
@@ -930,7 +930,7 @@
 }
 
 .timeline-content a {
-    color: #007acc;
+     
     text-decoration: none;
     font-weight: 600;
 }
@@ -953,14 +953,15 @@
         
         
         <div class="timeline-group">
-            <div class="timeline-year">
-                <h2 style="font-size: 1.5em;">2024</h2>
+            <div class="timeline-year" onclick="toggleVisibility(this)">
+                <h2 style="font-size: 1.5em;">2024↵</h2>
             </div>
-            <div class="timeline-posts">
+            <div class="timeline-posts" style="display: none;">
                 <ul>
                     
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="http://localhost:1313/post/my-code-snippets/">💻 My most used code snippets</a></p>
                             <p><time style="color :#666" datetime="2024-12-04T00:00:00&#43;00:00">
                                 December 4
                             </time>
@@ -974,12 +975,13 @@
                             </span>
                             
                             </p>
-                            <p><a href="http://localhost:1313/post/my-code-snippets/">💻 My most used code snippets</a></p>
+                            
                         </div>
                     </li>
                     
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="http://localhost:1313/post/indian-trade-asia/">🤝 Indians in trade across Asia</a></p>
                             <p><time style="color :#666" datetime="2024-12-03T00:00:00&#43;00:00">
                                 December 3
                             </time>
@@ -997,12 +999,13 @@
                             </span>
                             
                             </p>
-                            <p><a href="http://localhost:1313/post/indian-trade-asia/">🤝 Indians in trade across Asia</a></p>
+                            
                         </div>
                     </li>
                     
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="http://localhost:1313/post/website-building-workshop/">🌐 Personal Portfolio Website Workshop!</a></p>
                             <p><time style="color :#666" datetime="2024-11-15T00:00:00&#43;00:00">
                                 November 15
                             </time>
@@ -1024,7 +1027,7 @@
                             </span>
                             
                             </p>
-                            <p><a href="http://localhost:1313/post/website-building-workshop/">🌐 Personal Portfolio Website Workshop!</a></p>
+                            
                         </div>
                     </li>
                     
@@ -1033,14 +1036,15 @@
         </div>
         
         <div class="timeline-group">
-            <div class="timeline-year">
-                <h2 style="font-size: 1.5em;">2023</h2>
+            <div class="timeline-year" onclick="toggleVisibility(this)">
+                <h2 style="font-size: 1.5em;">2023↵</h2>
             </div>
-            <div class="timeline-posts">
+            <div class="timeline-posts" style="display: none;">
                 <ul>
                     
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="http://localhost:1313/post/get-started/">🎉 Easily create your own simple yet highly customizable blog</a></p>
                             <p><time style="color :#666" datetime="2023-10-27T00:00:00&#43;00:00">
                                 October 27
                             </time>
@@ -1058,12 +1062,13 @@
                             </span>
                             
                             </p>
-                            <p><a href="http://localhost:1313/post/get-started/">🎉 Easily create your own simple yet highly customizable blog</a></p>
+                            
                         </div>
                     </li>
                     
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="http://localhost:1313/post/second-brain/">🧠 Sharpen your thinking with a second brain</a></p>
                             <p><time style="color :#666" datetime="2023-10-26T00:00:00&#43;00:00">
                                 October 26
                             </time>
@@ -1079,12 +1084,13 @@
                             </span>
                             
                             </p>
-                            <p><a href="http://localhost:1313/post/second-brain/">🧠 Sharpen your thinking with a second brain</a></p>
+                            
                         </div>
                     </li>
                     
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="http://localhost:1313/post/data-visualization/">📈 Communicate your results effectively with the best data visualizations</a></p>
                             <p><time style="color :#666" datetime="2023-10-25T00:00:00&#43;00:00">
                                 October 25
                             </time>
@@ -1102,12 +1108,13 @@
                             </span>
                             
                             </p>
-                            <p><a href="http://localhost:1313/post/data-visualization/">📈 Communicate your results effectively with the best data visualizations</a></p>
+                            
                         </div>
                     </li>
                     
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="http://localhost:1313/post/teach-courses/">👩🏼‍🏫 Teach academic courses</a></p>
                             <p><time style="color :#666" datetime="2023-10-24T00:00:00&#43;00:00">
                                 October 24
                             </time>
@@ -1125,12 +1132,13 @@
                             </span>
                             
                             </p>
-                            <p><a href="http://localhost:1313/post/teach-courses/">👩🏼‍🏫 Teach academic courses</a></p>
+                            
                         </div>
                     </li>
                     
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="http://localhost:1313/post/project-management/">✅ Manage your projects</a></p>
                             <p><time style="color :#666" datetime="2023-10-23T00:00:00&#43;00:00">
                                 October 23
                             </time>
@@ -1146,7 +1154,7 @@
                             </span>
                             
                             </p>
-                            <p><a href="http://localhost:1313/post/project-management/">✅ Manage your projects</a></p>
+                            
                         </div>
                     </li>
                     
@@ -1156,6 +1164,16 @@
         
     </section>
 </div>
+<script>
+function toggleVisibility(element) {
+    var posts = element.nextElementSibling;
+    if (posts.style.display === "none") {
+        posts.style.display = "block";
+    } else {
+        posts.style.display = "none";
+    }
+}
+</script>
 
     </div>
     <div class="page-footer">

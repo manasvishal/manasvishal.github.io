@@ -28,7 +28,7 @@
     position: relative;
     margin: 40px 0;
     padding: 0;
-    border-left: 4px solid #007acc;
+    border-left: 2px solid #6ee7b7;
 }
 
 .timeline-group {
@@ -41,11 +41,12 @@
     top: 0;
     left: 10px;
     font-size: 1rem;
-    color: #007acc;
+    color: #6ee7b7;
     background: transparent;
     padding: 5px 10px;
     border-radius: 0px;
     border: 0px solid #007acc;
+    cursor: pointer;
 }
 
 /* Timeline posts styling */
@@ -63,12 +64,13 @@
 .timeline-item:before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: -9.1px;
-    width: 15px;
-    height: 15px;
-    background: #007acc;
+    top: 40%;
+    left: -8px;
+    width: 14px;
+    height: 14px;
+    background: #087e5c;
     border-radius: 50%;
+    opacity: 75%;
 }
 
 .timeline-content {
@@ -85,7 +87,7 @@
 }
 
 .timeline-content a {
-    color: #007acc;
+    /* color: #6ee7b7; */
     text-decoration: none;
     font-weight: 600;
 }
@@ -111,14 +113,15 @@
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
         {{ range $pages.GroupByPublishDate "2006" }}
         <div class="timeline-group">
-            <div class="timeline-year">
-                <h2 style="font-size: 1.5em;">{{ .Key }}</h2>
+            <div class="timeline-year" onclick="toggleVisibility(this)">
+                <h2 style="font-size: 1.5em;">{{ .Key }}↵</h2>
             </div>
-            <div class="timeline-posts">
+            <div class="timeline-posts" style="display: none;">
                 <ul>
                     {{ range sort .Pages "PublishDate" "desc" }}
                     <li class="timeline-item">
                         <div class="timeline-content">
+                            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
                             <p><time style="color :#666" datetime="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}">
                                 {{ .PublishDate.Format "January 2" }}
                             </time>
@@ -132,7 +135,7 @@
                             </span>
                             {{ end }}
                             </p>
-                            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                            
                         </div>
                     </li>
                     {{ end }}
@@ -142,4 +145,14 @@
         {{ end }}
     </section>
 </div>
+<script>
+function toggleVisibility(element) {
+    var posts = element.nextElementSibling;
+    if (posts.style.display === "none") {
+        posts.style.display = "block";
+    } else {
+        posts.style.display = "none";
+    }
+}
+</script>
 {{ end }}
