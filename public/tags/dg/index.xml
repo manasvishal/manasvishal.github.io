@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/dg/</link>
       <atom:link href="http://localhost:1313/tags/dg/index.xml" rel="self" type="application/rss+xml" />
     <description>DG</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>DG</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Discontinuous Galerkin Methods</title>
       <link>http://localhost:1313/project/dg/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/dg/</guid>
       <description>&lt;p&gt;A high-performance computing project leveraging the Discontinuous Galerkin (DG) method to achieve superconvergence in gravitational wave simulations through efficient computational modeling.&lt;/p&gt;</description>
     </item>

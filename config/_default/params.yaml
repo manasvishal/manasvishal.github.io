@@ -36,7 +36,10 @@ header:
     show_theme_chooser: true
     logo:
       text: "Manas Vishal"
-
+params:
+  mainSections:
+    - posts
+    - blog
 # Site footer
 footer:
   enable: false
@@ -61,3 +64,4 @@ features:
     enable: false
 
 favicon: 'static/favicon.png'
+

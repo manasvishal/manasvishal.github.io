@@ -1,0 +1,135 @@
+{{ define "main" }}
+<div class="content" role="main">
+    <style>
+/* Container for the timeline */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Center header text */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+}
+
+.page-description {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Timeline structure */
+.timeline {
+    position: relative;
+    margin: 40px 0;
+    padding: 0;
+    border-left: 4px solid #007acc;
+}
+
+.timeline-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-year h2 {
+    position: relative;
+    top: 0;
+    left: 10px;
+    font-size: 1rem;
+    color: #007acc;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 0px;
+    border: 0px solid #007acc;
+}
+
+/* Timeline posts styling */
+.timeline-posts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: #007acc;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content time {
+    font-weight: bold;
+    color: #333;
+}
+
+.timeline-content a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.timeline-content a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+
+<!-- This layout was made with the help of https://darcynorman.net/archives/
+ and 
+ https://discourse.gohugo.io/t/listing-all-posts/30575/4
+ -->
+<div class="container">
+    <header class="page-header">
+        <h1 class="text-center">{{ .Title }}</h1>
+        {{ if .Description }}
+        <p class="text-center page-description">{{ .Description }}</p>
+        {{ end }}
+    </header>
+    <section class="timeline">
+        {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{ range $pages.GroupByPublishDate "2006" }}
+        <div class="timeline-group">
+            <div class="timeline-year">
+                <h2 style="font-size: 1.5em;">{{ .Key }}</h2>
+            </div>
+            <div class="timeline-posts">
+                <ul>
+                    {{ range sort .Pages "PublishDate" "asc" }}
+                    <li class="timeline-item">
+                        <div class="timeline-content">
+                            <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}">
+                                {{ .PublishDate.Format "January 2" }}
+                            </time>
+                            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        {{ end }}
+    </section>
+</div>
+{{ end }}
