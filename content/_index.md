@@ -18,7 +18,7 @@ sections:
       button:
         text: Download CV
         url: https://texlive2020.latexonline.cc/compile?git=https://github.com/manasvishal/CV_ManasVishal&target=CV_Manas.tex&command=xelatex
-      
+  
     # design:
     #   css_class: light
     #   background:

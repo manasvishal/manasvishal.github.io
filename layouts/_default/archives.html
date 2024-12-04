@@ -111,12 +111,13 @@
     </header>
     <section class="timeline">
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{ $currentYear := now.Format "2006" }}
         {{ range $pages.GroupByPublishDate "2006" }}
         <div class="timeline-group">
             <div class="timeline-year" onclick="toggleVisibility(this)">
                 <h2 style="font-size: 1.5em;">{{ .Key }}↵</h2>
             </div>
-            <div class="timeline-posts" style="display: none;">
+            <div class="timeline-posts" style="display: {{ if eq .Key $currentYear }}block{{ else }}none{{ end }};">
                 <ul>
                     {{ range sort .Pages "PublishDate" "desc" }}
                     <li class="timeline-item">
