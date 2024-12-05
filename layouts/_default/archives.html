@@ -25,6 +25,7 @@
 
 /* Timeline structure */
 .timeline {
+    
     position: relative;
     margin: 40px 0;
     padding: 0;
@@ -65,12 +66,13 @@
     content: "";
     position: absolute;
     top: 40%;
-    left: -8px;
-    width: 14px;
-    height: 14px;
-    background: #087e5c;
-    border-radius: 50%;
-    opacity: 75%;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #6ee7b7;
+    transform: rotate(270deg);
 }
 
 .timeline-content {
@@ -96,6 +98,18 @@
     text-decoration: underline;
 }
 
+/* Add transition for smooth expand/collapse */
+.timeline-posts {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.timeline-posts.expanded {
+    max-height: 1000px; /* Adjust this value as needed */
+    
+}
+
     </style>
 
 <!-- This layout was made with the help of https://darcynorman.net/archives/
@@ -117,7 +131,7 @@
             <div class="timeline-year" onclick="toggleVisibility(this)">
                 <h2 style="font-size: 1.5em;">{{ .Key }}↵</h2>
             </div>
-            <div class="timeline-posts" style="display: {{ if eq .Key $currentYear }}block{{ else }}none{{ end }};">
+            <div class="timeline-posts {{ if eq .Key $currentYear }}expanded{{ end }}">
                 <ul>
                     {{ range sort .Pages "PublishDate" "desc" }}
                     <li class="timeline-item">
@@ -149,11 +163,7 @@
 <script>
 function toggleVisibility(element) {
     var posts = element.nextElementSibling;
-    if (posts.style.display === "none") {
-        posts.style.display = "block";
-    } else {
-        posts.style.display = "none";
-    }
+    posts.classList.toggle('expanded');
 }
 </script>
 {{ end }}
