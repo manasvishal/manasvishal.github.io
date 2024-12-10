@@ -18,12 +18,14 @@ image:
 
 Below is an example of a Fourier Square Wave animation created using Manim:
 
-![Fourier Square Wave Animation](FourierSquareWave.gif)
 
 This animation demonstrates how a square wave can be approximated by summing the first few terms of its Fourier series. The visualization helps in understanding the concept of Fourier series and how complex waveforms can be constructed from simpler sine and cosine waves.
 
+
+![Fourier Square Wave Animation](FourierSquareWave.gif)
+
 <details>
-  <summary>Click to expand the code</summary>
+  <summary>Click to expand the source code for the above video</summary>
 
   ```python
   from manim import *
@@ -127,6 +129,7 @@ Each of these tools provides a way to ensure that applications run consistently 
 To run Manim on an HPC system using Apptainer, follow these steps:
 
 1. **Load the module Apptainer**:
+
   ```bash
   module load apptainer/latest
   ```
@@ -138,7 +141,7 @@ To run Manim on an HPC system using Apptainer, follow these steps:
 
   ```
 Note: If you want to use your own docker container file, you can do so by:
-  - ** Create a Dockerfile for Manim: **
+  - **Create a Dockerfile for Manim:**
     ```dockerfile
     FROM manimcommunity/manim:latest
 

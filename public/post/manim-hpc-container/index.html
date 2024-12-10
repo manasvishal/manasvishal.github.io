@@ -1253,6 +1253,7 @@
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
         <h2 id="example-output">Example Output</h2>
 <p>Below is an example of a Fourier Square Wave animation created using Manim:</p>
+<p>This animation demonstrates how a square wave can be approximated by summing the first few terms of its Fourier series. The visualization helps in understanding the concept of Fourier series and how complex waveforms can be constructed from simpler sine and cosine waves.</p>
 <p>
 
 
@@ -1276,9 +1277,8 @@
            loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>This animation demonstrates how a square wave can be approximated by summing the first few terms of its Fourier series. The visualization helps in understanding the concept of Fourier series and how complex waveforms can be constructed from simpler sine and cosine waves.</p>
 <details>
-  <summary>Click to expand the code</summary>
+  <summary>Click to expand the source code for the above video</summary>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">manim</span> <span class="kn">import</span> <span class="o">*</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">FourierSquareWave</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
@@ -1381,7 +1381,7 @@ Manim provides an official Docker image. Use the following command to pull the D
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apptainer build manim.sif docker://manimcommunity/manim
 </span></span></code></pre></div><p>Note: If you want to use your own docker container file, you can do so by:</p>
 <ul>
-<li>** Create a Dockerfile for Manim: **
+<li><strong>Create a Dockerfile for Manim:</strong>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> manimcommunity/manim:latest</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c"># Update Cairo and Pango</span><span class="err">
