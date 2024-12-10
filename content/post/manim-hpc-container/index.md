@@ -1,7 +1,7 @@
 ---
 title: 💻 How to use manim on an HPC using containers
 summary: Just some pieces of code on how to run manim on HPC
-date: 2024-12-07
+date: 2024-12-09
 authors:
   - admin
 tags:

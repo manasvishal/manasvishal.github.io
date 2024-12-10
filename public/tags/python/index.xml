@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/python/</link>
       <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>Python</title>
@@ -15,7 +15,7 @@
     <item>
       <title>💻 How to use manim on an HPC using containers</title>
       <link>http://localhost:1313/post/manim-hpc-container/</link>
-      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/manim-hpc-container/</guid>
       <description>&lt;h2 id=&#34;example-output&#34;&gt;Example Output&lt;/h2&gt;
 &lt;p&gt;Below is an example of a Fourier Square Wave animation created using Manim:&lt;/p&gt;
