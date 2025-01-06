@@ -220,7 +220,8 @@ awards:
 ---
 
 ## About Me
-<div style="display: inline-block; transform-origin: bottom right; margin-top: -10px; animation: wave 1s infinite linear;">
-    👋
-</div>
-Manas Vishal is a PhD candidate in Computational Sciences and Engineering at UMass Dartmouth, specializing in gravitational wave modeling and high-performance computing. With a background in Physics from IISER Kolkata, his work advances gravitational wave science, focusing on black hole simulations and data-intensive research. Beyond academia, he enjoys coding, photography, and exploring history and geopolitics.
+
+<div style=" display: inline-block;transform-origin: bottom right; margin-top: -10px; animation: wave 1s infinite linear;">
+    👋 
+</div> 
+Hello! Manas Vishal is a PhD candidate in Computational Sciences and Engineering at UMass Dartmouth, specializing in gravitational wave modeling and high-performance computing. With a background in Physics from IISER Kolkata, his work advances gravitational wave science, focusing on black hole simulations and data-intensive research. Beyond academia, he enjoys coding, photography, and exploring history and geopolitics.
