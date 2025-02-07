@@ -58,7 +58,7 @@ jobs:
   deploy:
     if: github.repository_owner != 'HugoBlox'
     environment:
-      name: github-pages
+      name: public
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
