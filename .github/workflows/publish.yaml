@@ -51,7 +51,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: public
+        name: github-pages
         path: ./public
 # Found working solution for hard links and symlinks here: https://github.com/n8design/htwoo/actions/runs/12135102655/workflow
 
