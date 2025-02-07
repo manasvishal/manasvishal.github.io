@@ -32,51 +32,37 @@ jobs:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
-      - name: Print Hugo version
-        run: hugo version
-
-      - name: Cache Hugo modules
-        uses: actions/cache@v3
-        with:
-          path: /tmp/hugo_cache_runner/
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
-
       - name: Build site with Hugo
         env:
           HUGO_ENVIRONMENT: production
         run: |
-          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          # Adjust the baseURL as needed for your repository/pages configuration
+          hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.repository }}/"
 
-      - name: List contents of public directory
-        run: ls -la ./public
-
-      - name: Generate Pagefind search index
-        run: npx pagefind --site "public"
+      - name: List public folder contents
+        run: |
+          if [ -d public ]; then
+            echo "Listing contents of public folder:"
+            ls -la public
+          else
+            echo "Error: public folder does not exist!"
+            exit 1
+          fi
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: ./public
+          path: public
           retention-days: 1
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: public
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Print environment variables
-        run: printenv
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
