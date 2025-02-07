@@ -1,4 +1,3 @@
-
 name: Deploy website to GitHub Pages
 
 env:
@@ -37,8 +36,8 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
         run: |
-          # Adjust the baseURL as needed for your repository/pages configuration
           hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.repository }}/"
+
       - name: List public folder contents
         run: |
           if [ -d public ]; then
@@ -48,6 +47,7 @@ jobs:
             echo "Error: public folder does not exist!"
             exit 1
           fi
+
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
@@ -56,7 +56,6 @@ jobs:
           retention-days: 1
 
   deploy:
-    if: github.repository_owner != 'HugoBlox'
     needs: build
     runs-on: ubuntu-latest
     environment:
