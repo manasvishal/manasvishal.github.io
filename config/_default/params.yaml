@@ -42,9 +42,9 @@ params:
     - blog
 # Site footer
 footer:
-  enable: false
+  enable: true
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Manas Vishal. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

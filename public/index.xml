@@ -898,7 +898,7 @@ Manim provides an official Docker image. Use the following command to pull the D
 
 
 
-&lt;div id=&#34;chart-748536291&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-198534627&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -916,7 +916,7 @@ Manim provides an official Docker image. Use the following command to pull the D
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-748536291&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-198534627&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
