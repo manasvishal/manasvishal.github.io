@@ -53,6 +53,7 @@ jobs:
       with:
         name: github-pages
         path: ./public
+        retention-days: 1
 # Found working solution for hard links and symlinks here: https://github.com/n8design/htwoo/actions/runs/12135102655/workflow
 
   deploy:
@@ -66,3 +67,5 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
+      with:
+        artifact_name: github-pages
