@@ -51,8 +51,9 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: github-pages
+        name: public
         path: ./public
+# Found working solution for hard links and symlinks here: https://github.com/n8design/htwoo/actions/runs/12135102655/workflow
 
   deploy:
     if: github.repository_owner != 'HugoBlox'
