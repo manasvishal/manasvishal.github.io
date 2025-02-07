@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trade | Manas Vishal</title>
-    <link>http://localhost:32961/tags/trade/</link>
-      <atom:link href="http://localhost:32961/tags/trade/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/trade/</link>
+      <atom:link href="http://localhost:1313/tags/trade/index.xml" rel="self" type="application/rss+xml" />
     <description>Trade</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:32961/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>Trade</title>
-      <link>http://localhost:32961/tags/trade/</link>
+      <link>http://localhost:1313/tags/trade/</link>
     </image>
     
     <item>
       <title>🤝 Indians in trade across Asia</title>
-      <link>http://localhost:32961/post/indian-trade-asia/</link>
+      <link>http://localhost:1313/post/indian-trade-asia/</link>
       <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32961/post/indian-trade-asia/</guid>
+      <guid>http://localhost:1313/post/indian-trade-asia/</guid>
       <description>&lt;p&gt;Collecting some sources I found across internet about Indians and their presence across Asia trading with locals.&lt;/p&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
 &lt;h3 id=&#34;indians-in-central-asia&#34;&gt;Indians in Central Asia:&lt;/h3&gt;

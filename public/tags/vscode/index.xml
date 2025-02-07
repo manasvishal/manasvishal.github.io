@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VScode | Manas Vishal</title>
+    <link>http://localhost:1313/tags/vscode/</link>
+      <atom:link href="http://localhost:1313/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <description>VScode</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
+      <title>VScode</title>
+      <link>http://localhost:1313/tags/vscode/</link>
+    </image>
+    
+    <item>
+      <title>VScode config file</title>
+      <link>http://localhost:1313/post/vscode-settings-json/</link>
+      <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/vscode-settings-json/</guid>
+      <description>&lt;h1 id=&#34;main-title&#34;&gt;Main title&lt;/h1&gt;
+&lt;h3 id=&#34;add-more-things&#34;&gt;add more things&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
