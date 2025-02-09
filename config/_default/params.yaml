@@ -42,7 +42,7 @@ params:
     - blog
 # Site footer
 footer:
-  enable: true
+  enable: false
   copyright:
     notice: '© {year} Manas Vishal. This work is licensed under {license}'
     license:
@@ -62,6 +62,25 @@ features:
     enable: true
   privacy_pack:
     enable: false
+  comment:
+    # Choose a provider: giscus, disqus, commento, or '' to disable commenting
+    provider: ''
+    giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
+      theme: preferred_color_scheme
+      language_code: en
+      mapping: pathname
+    disqus:
+      # Paste the shortname from your Disqus dashboard.
+      shortname: ''
+      # Show comment count in page header? (true/false)
+      show_count: true
+    commento:
+      # If you self-host Commento, enter your custom Commento URL here.
+      url: ''
 
 favicon: 'static/favicon.png'
 
