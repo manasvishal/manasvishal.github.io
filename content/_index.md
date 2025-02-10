@@ -17,7 +17,8 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: https://texlive2020.latexonline.cc/compile?git=https://github.com/manasvishal/CV_ManasVishal&target=CV_Manas.tex&command=xelatex
+        # url: https://texlive2020.latexonline.cc/compile?git=https://github.com/manasvishal/CV_ManasVishal&target=CV_Manas.tex&command=xelatex
+        url: https://github.com/manasvishal/CV_ManasVishal/blob/pdflatex/CV_Manas.pdf
   
     # design:
     #   css_class: light
