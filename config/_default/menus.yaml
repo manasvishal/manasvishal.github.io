@@ -25,6 +25,9 @@ main:
   - name: Archives
     url: archives/
     weight: 40
+  - name: BlackHole
+    url: blackhole/
+    weight: 60
   # - name: Teaching
   #   url: teaching/
   #   weight: 40
