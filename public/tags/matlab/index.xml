@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matlab | Manas Vishal</title>
+    <link>http://localhost:1313/tags/matlab/</link>
+      <atom:link href="http://localhost:1313/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
+    <description>Matlab</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
+      <title>Matlab</title>
+      <link>http://localhost:1313/tags/matlab/</link>
+    </image>
+    
+    <item>
+      <title>Tricks to get extended precision in Julia/Matlab</title>
+      <link>http://localhost:1313/post/doubledouble/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/doubledouble/</guid>
+      <description>&lt;p&gt;In many scientific and engineering applications, double-precision floating point (i.e., &lt;code&gt;Float64&lt;/code&gt;) is insufficient for achieving the desired level of accuracy. This is especially true in simulations involving extreme scales, such as black hole perturbation theory or gravitational wave modeling, where small numerical errors can propagate and dominate the result. Here are some &lt;strong&gt;tricks and tools&lt;/strong&gt; to achieve &lt;strong&gt;extended precision&lt;/strong&gt; in &lt;strong&gt;Julia&lt;/strong&gt; and &lt;strong&gt;MATLAB&lt;/strong&gt;, with examples from my own research experience.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-why-extended-precision&#34;&gt;🔬 Why Extended Precision?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Round-off errors&lt;/strong&gt; can dominate in long-time evolutions or chaotic systems.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Condition numbers&lt;/strong&gt; in linear systems can lead to significant loss of accuracy.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Waveform modeling&lt;/strong&gt; for gravitational waves often requires more than 16 decimal digits to preserve phase accuracy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-extended-precision-in-julia&#34;&gt;🟣 Extended Precision in Julia&lt;/h2&gt;
+&lt;p&gt;Julia has several powerful packages that enable arbitrary or extended precision:&lt;/p&gt;
+&lt;h3 id=&#34;1-bigfloat-arbitrary-precision&#34;&gt;1. &lt;code&gt;BigFloat&lt;/code&gt; (Arbitrary Precision)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;setprecision&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;BigFloat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;# Set global precision&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;BigFloat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1.234567890123456789&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt; Native to Julia, integrates with most libraries.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt; Slower due to arbitrary precision overhead.&lt;/p&gt;
+&lt;h3 id=&#34;2-multifloatsjl-quadocto-precision&#34;&gt;2. &lt;code&gt;MultiFloats.jl&lt;/code&gt; (Quad/Octo Precision)&lt;/h3&gt;
+&lt;p&gt;MultiFloats uses a technique called &lt;strong&gt;compensated arithmetic&lt;/strong&gt;, representing numbers as tuples of standard &lt;code&gt;Float64&lt;/code&gt;s:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MultiFloats&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;T&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Float64x2&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;# Roughly quad precision&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.2345678901234567&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.0000000000000001&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;z&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Significantly faster than &lt;code&gt;BigFloat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Easily supports &lt;code&gt;Float64x2&lt;/code&gt;, &lt;code&gt;Float64x3&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;li&gt;Great for simulations where &lt;strong&gt;precision &amp;gt; speed&lt;/strong&gt;, but &lt;strong&gt;not arbitrary precision&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Not universally compatible with every Julia library.&lt;/li&gt;
+&lt;li&gt;Requires careful variable type management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-hardware-supported-quad-precision-power9-etc&#34;&gt;3. Hardware-Supported Quad Precision (Power9 etc.)&lt;/h3&gt;
+&lt;p&gt;If you’re on specialized hardware like IBM Power9:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can access hardware quad-precision through libraries like &lt;code&gt;libquadmath&lt;/code&gt; (though Julia does not natively expose it yet).&lt;/li&gt;
+&lt;li&gt;Use with C wrappers or special packages (still under development).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-extended-precision-in-matlab&#34;&gt;🟡 Extended Precision in MATLAB&lt;/h2&gt;
+&lt;p&gt;MATLAB does not support extended precision out of the box, but there are options:&lt;/p&gt;
+&lt;h3 id=&#34;1-vpa-symbolic-math-toolbox&#34;&gt;1. &lt;code&gt;vpa&lt;/code&gt; (Symbolic Math Toolbox)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;digits&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;% Roughly quadruple precision&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vpa&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;1.234567890123456789&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt; Easy to use, adjustable precision.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt; Slow; not intended for full PDE solvers or high-performance work.&lt;/p&gt;
+&lt;h3 id=&#34;2-using-external-libraries-doubledouble&#34;&gt;2. Using External Libraries: &lt;code&gt;DoubleDouble&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;One option is the open-source &lt;a href=&#34;https://github.com/tholden/DoubleDouble&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DoubleDouble&lt;/a&gt; library:&lt;/p&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;code&gt;DoubleDouble&lt;/code&gt; files and add to your path.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;dd&lt;/code&gt; type:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.2345678901234567&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.0000000000000001&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;z&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt; Near &lt;code&gt;Float64x2&lt;/code&gt; behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt; Manual management, can’t use with built-in solvers easily.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-my-use-case-gravitational-wave-solvers&#34;&gt;🧪 My Use Case: Gravitational Wave Solvers&lt;/h2&gt;
+&lt;p&gt;In solving the Teukolsky equation using discontinuous Galerkin methods, I found that round-off error polluted late-time tails and memory effects. Switching to &lt;code&gt;Float64x2&lt;/code&gt; in Julia gave me clean, smooth decay curves and more reliable waveform extraction. It’s a small change, but the numerical impact was enormous.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-tips&#34;&gt;🧠 Tips&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Track all constants&lt;/strong&gt;: Don’t forget to convert literals and constants to extended precision manually.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use type annotations&lt;/strong&gt;: Especially in Julia—otherwise you risk automatic down-casting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benchmark!&lt;/strong&gt;: Sometimes &lt;code&gt;Float64x2&lt;/code&gt; is just enough, and you don’t need full &lt;code&gt;BigFloat&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-related-tools&#34;&gt;🧵 Related Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Julia: &lt;code&gt;ArbNumerics.jl&lt;/code&gt;, &lt;code&gt;DoubleFloats.jl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;MATLAB: &lt;a href=&#34;https://www.advanpix.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Advanpix Multiprecision Toolbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-conclusion&#34;&gt;🚀 Conclusion&lt;/h2&gt;
+&lt;p&gt;Extended precision is not just a luxury—it’s a &lt;strong&gt;requirement&lt;/strong&gt; in certain scientific domains. Whether you&amp;rsquo;re building waveform surrogates or simulating relativistic particles, understanding and deploying these tools can help you &lt;strong&gt;unlock cleaner, more accurate simulations&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Got more tricks? &lt;a href=&#34;mailto:mvishal@umassd.edu&#34;&gt;Message me&lt;/a&gt; or connect on GitHub!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; Julia, MATLAB, BigFloat, Float64x2, MultiFloats, vpa, extended precision, DoubleDouble, gravitational wave modeling, discontinuous Galerkin.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
