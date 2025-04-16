@@ -82,6 +82,15 @@ commentable: true
   "editor.accessibilitySupport": "off",
   "terminal.integrated.tabs.defaultColor": "terminal.ansiGreen",
   "workbench.colorCustomizations": {
+
+     "tab.activeBorderTop": "#00FF00", // bright green top border
+    "tab.activeBorderLeft": "#00FF00", // bright green left border
+    "tab.activeBorderRight": "#00FF00", // bright green right border
+    "tab.activeBorderBottom": "#00FF00", // bright green bottom border
+    // "tab.activeBorder": "#00FF00",     // bright green border all around
+    "tab.activeBorder": "#00FF00", // green border all around (VS Code Insiders / newer versions)
+    "editorGroup.border": "#00FF00", // optional, green border around the editor group
+    
     "terminal.foreground": "#00FD61",
     "terminal.background": "#383737",
     "terminal.ansiBlack": "#1D2021",
