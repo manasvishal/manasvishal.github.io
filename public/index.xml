@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manas Vishal</title>
-    <link>http://localhost:1313/</link>
-      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:40451/</link>
+      <atom:link href="http://localhost:40451/index.xml" rel="self" type="application/rss+xml" />
     <description>Manas Vishal</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:40451/media/icon_hu12677917447461260747.png</url>
       <title>Manas Vishal</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:40451/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>http://localhost:1313/event/example/</link>
+      <link>http://localhost:40451/event/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/event/example/</guid>
+      <guid>http://localhost:40451/event/example/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -34,10 +34,51 @@
     </item>
     
     <item>
+      <title>How to Set Up Your UMassD Email on Linux with Evolution &amp; Exchange Online</title>
+      <link>http://localhost:40451/post/umassd-email-linux/</link>
+      <pubDate>Wed, 16 Jul 2025 09:00:00 -0400</pubDate>
+      <guid>http://localhost:40451/post/umassd-email-linux/</guid>
+      <description>&lt;p&gt;As an Linux user at UMass Dartmouth, you might find yourself frustrated by keep opening a browser tab to monitor your emails. If you are in the neef of seamless access to your UMassD Office 365 email. This guide walks you through installing and configuring GNOME Evolution with the Evolution‑EWS plugin so you can send and receive mail with your &lt;code&gt;@umassd.edu&lt;/code&gt; account.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A valid UMassD Microsoft 365 email account.&lt;/li&gt;
+&lt;li&gt;A Linux distribution with:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Evolution&lt;/strong&gt; version 3.27.91 or later (3.44.4+ recommended)&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;evolution‑ews&lt;/strong&gt; plugin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Internet connectivity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;installing-evolution--evolutionews&#34;&gt;Installing Evolution &amp;amp; Evolution‑EWS&lt;/h2&gt;
+&lt;p&gt;Depending on your distro, run one of the following:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Debian / Ubuntu&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install evolution evolution-ews
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;setting-up-your-umassd-email-account&#34;&gt;Setting Up Your UMassD Email Account&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Evolution.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;File &amp;gt; New &amp;gt; Mail Account&lt;/strong&gt;, then click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter your name and UMassD email address, uncheck &lt;strong&gt;Look up mail server details&amp;hellip;&lt;/strong&gt;, then click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Change &lt;strong&gt;Server Type&lt;/strong&gt; to &lt;strong&gt;Exchange Web Services&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter your UMassD email address as your username.&lt;/li&gt;
+&lt;li&gt;Enter &lt;code&gt;https://outlook.office365.com/EWS/Exchange.asmx&lt;/code&gt; as the &lt;strong&gt;Host URL&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Change the &lt;strong&gt;Authentication type&lt;/strong&gt; to &lt;strong&gt;OAuth2 (Office365)&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Fetch URL&lt;/strong&gt; button, which will ask for your password and, if successful, fill the &lt;strong&gt;OAB URL&lt;/strong&gt; field.&lt;/li&gt;
+&lt;li&gt;Complete the rest of the steps in the account setup wizard as you see fit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You should have the UMassD email account setup now.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Tricks to get extended precision in Julia/Matlab</title>
-      <link>http://localhost:1313/post/doubledouble/</link>
+      <link>http://localhost:40451/post/doubledouble/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/doubledouble/</guid>
+      <guid>http://localhost:40451/post/doubledouble/</guid>
       <description>&lt;p&gt;In many scientific and engineering applications, double-precision floating point (i.e., &lt;code&gt;Float64&lt;/code&gt;) is insufficient for achieving the desired level of accuracy. This is especially true in simulations involving extreme scales, such as black hole perturbation theory or gravitational wave modeling, where small numerical errors can propagate and dominate the result. Here are some &lt;strong&gt;tricks and tools&lt;/strong&gt; to achieve &lt;strong&gt;extended precision&lt;/strong&gt; in &lt;strong&gt;Julia&lt;/strong&gt; and &lt;strong&gt;MATLAB&lt;/strong&gt;, with examples from my own research experience.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-why-extended-precision&#34;&gt;🔬 Why Extended Precision?&lt;/h2&gt;
@@ -125,9 +166,9 @@
     
     <item>
       <title>Github Action to Build PDF using pdflatex</title>
-      <link>http://localhost:1313/post/github-build-pdf/</link>
+      <link>http://localhost:40451/post/github-build-pdf/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/github-build-pdf/</guid>
+      <guid>http://localhost:40451/post/github-build-pdf/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Build PDF and Push to Orphan Branch&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -199,9 +240,9 @@
     
     <item>
       <title>VScode config file</title>
-      <link>http://localhost:1313/post/vscode-settings-json/</link>
+      <link>http://localhost:40451/post/vscode-settings-json/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/vscode-settings-json/</guid>
+      <guid>http://localhost:40451/post/vscode-settings-json/</guid>
       <description>&lt;h3 id=&#34;these-configs-help-me-easily-navigate-vscode&#34;&gt;These configs help me easily navigate VScode.&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;remote.SSH.remotePlatform&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -307,9 +348,9 @@
     
     <item>
       <title>💻 How to use manim on an HPC using containers</title>
-      <link>http://localhost:1313/post/manim-hpc-container/</link>
+      <link>http://localhost:40451/post/manim-hpc-container/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/manim-hpc-container/</guid>
+      <guid>http://localhost:40451/post/manim-hpc-container/</guid>
       <description>&lt;h2 id=&#34;example-output&#34;&gt;Example Output&lt;/h2&gt;
 &lt;p&gt;Below is an example of a Fourier Square Wave animation created using Manim:&lt;/p&gt;
 &lt;p&gt;This animation demonstrates how a square wave can be approximated by summing the first few terms of its Fourier series. The visualization helps in understanding the concept of Fourier series and how complex waveforms can be constructed from simpler sine and cosine waves.&lt;/p&gt;
@@ -332,7 +373,7 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Fourier Square Wave Animation&#34;
-           src=&#34;http://localhost:1313/post/manim-hpc-container/FourierSquareWave.gif&#34;
+           src=&#34;http://localhost:40451/post/manim-hpc-container/FourierSquareWave.gif&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -488,9 +529,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>💻 My most used code snippets</title>
-      <link>http://localhost:1313/post/my-code-snippets/</link>
+      <link>http://localhost:40451/post/my-code-snippets/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/my-code-snippets/</guid>
+      <guid>http://localhost:40451/post/my-code-snippets/</guid>
       <description>&lt;h2 id=&#34;list-of-bash-commands&#34;&gt;List of Bash Commands&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;This command will print out the top 10 folders that occupy the most space in Gigabytes&lt;/li&gt;
@@ -549,9 +590,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>🤝 Indians in trade across Asia</title>
-      <link>http://localhost:1313/post/indian-trade-asia/</link>
+      <link>http://localhost:40451/post/indian-trade-asia/</link>
       <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/indian-trade-asia/</guid>
+      <guid>http://localhost:40451/post/indian-trade-asia/</guid>
       <description>&lt;p&gt;Collecting some sources I found across internet about Indians and their presence across Asia trading with locals.&lt;/p&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
 &lt;h3 id=&#34;indians-in-central-asia&#34;&gt;Indians in Central Asia:&lt;/h3&gt;
@@ -575,9 +616,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>🌐 Personal Portfolio Website Workshop!</title>
-      <link>http://localhost:1313/post/website-building-workshop/</link>
+      <link>http://localhost:40451/post/website-building-workshop/</link>
       <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/website-building-workshop/</guid>
+      <guid>http://localhost:40451/post/website-building-workshop/</guid>
       <description>&lt;h1 id=&#34;welcome-to-the-personal-portfolio-website-workshop-&#34;&gt;Welcome to the Personal Portfolio Website Workshop! 👋&lt;/h1&gt;
 &lt;p&gt;Hello, fellow PhD students! 🎓&lt;/p&gt;
 &lt;p&gt;This repository is here to help you build your personal academic portfolio website. By the end of this guide, you’ll have a beautiful, professional webpage to showcase your research, publications, and achievements. We’ll use &lt;strong&gt;HTML5 UP templates&lt;/strong&gt;, &lt;strong&gt;Jekyll&lt;/strong&gt;, or &lt;strong&gt;Hugo&lt;/strong&gt; to create a static website and deploy it to &lt;strong&gt;GitHub Pages&lt;/strong&gt; for free hosting.&lt;/p&gt;
@@ -760,9 +801,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>Template Post for Hugo</title>
-      <link>http://localhost:1313/post/template-post/</link>
+      <link>http://localhost:40451/post/template-post/</link>
       <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/template-post/</guid>
+      <guid>http://localhost:40451/post/template-post/</guid>
       <description>&lt;h1 id=&#34;main-title&#34;&gt;Main title&lt;/h1&gt;
 &lt;h3 id=&#34;add-more-things&#34;&gt;add more things&lt;/h3&gt;
 </description>
@@ -770,25 +811,25 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>EMRI/BHPTNR Surrogates</title>
-      <link>http://localhost:1313/project/surrogates/</link>
+      <link>http://localhost:40451/project/surrogates/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/surrogates/</guid>
+      <guid>http://localhost:40451/project/surrogates/</guid>
       <description>&lt;p&gt;The BHPTNRSurrogate(s) package provides access to a family of surrogate gravitational waveform models built on waveforms generated with point-particle black hole perturbation theory (ppBHPT) framework. These models extend from comparable mass-ratio to large mass-ratio regimes and are calibrated to numerical relativity (NR) waveforms in the comprable-mass-ratio regime.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>http://localhost:40451/projects/</link>
       <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>http://localhost:40451/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>🎉 Easily create your own simple yet highly customizable blog</title>
-      <link>http://localhost:1313/post/get-started/</link>
+      <link>http://localhost:40451/post/get-started/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/get-started/</guid>
+      <guid>http://localhost:40451/post/get-started/</guid>
       <description>&lt;p&gt;Welcome 👋&lt;/p&gt;
 
 
@@ -872,9 +913,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>🧠 Sharpen your thinking with a second brain</title>
-      <link>http://localhost:1313/post/second-brain/</link>
+      <link>http://localhost:40451/post/second-brain/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/second-brain/</guid>
+      <guid>http://localhost:40451/post/second-brain/</guid>
       <description>&lt;p&gt;Create a personal knowledge base and share your knowledge with your peers.&lt;/p&gt;
 &lt;p&gt;Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.&lt;/p&gt;
 &lt;p&gt;Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.&lt;/p&gt;
@@ -984,9 +1025,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>📈 Communicate your results effectively with the best data visualizations</title>
-      <link>http://localhost:1313/post/data-visualization/</link>
+      <link>http://localhost:40451/post/data-visualization/</link>
       <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/data-visualization/</guid>
+      <guid>http://localhost:40451/post/data-visualization/</guid>
       <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
 &lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
 &lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
@@ -997,7 +1038,7 @@ Manim provides an official Docker image. Use the following command to pull the D
 
 
 
-&lt;div id=&#34;chart-789514623&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-185693724&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1015,7 +1056,7 @@ Manim provides an official Docker image. Use the following command to pull the D
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-789514623&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-185693724&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1194,9 +1235,9 @@ Crash --&gt; [*]
     
     <item>
       <title>👩🏼‍🏫 Teach academic courses</title>
-      <link>http://localhost:1313/post/teach-courses/</link>
+      <link>http://localhost:40451/post/teach-courses/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/teach-courses/</guid>
+      <guid>http://localhost:40451/post/teach-courses/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -1249,7 +1290,7 @@ Crash --&gt; [*]
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:1313/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;http://localhost:40451/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
@@ -1308,17 +1349,17 @@ data.head()
     
     <item>
       <title>Experience</title>
-      <link>http://localhost:1313/experience/</link>
+      <link>http://localhost:40451/experience/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/</guid>
+      <guid>http://localhost:40451/experience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learn JavaScript</title>
-      <link>http://localhost:1313/teaching/js/</link>
+      <link>http://localhost:40451/teaching/js/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/js/</guid>
+      <guid>http://localhost:40451/teaching/js/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -1365,7 +1406,7 @@ data.head()
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:1313/teaching/js/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;http://localhost:40451/teaching/js/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
@@ -1442,9 +1483,9 @@ data.head()
     
     <item>
       <title>Learn Python</title>
-      <link>http://localhost:1313/teaching/python/</link>
+      <link>http://localhost:40451/teaching/python/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/python/</guid>
+      <guid>http://localhost:40451/teaching/python/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -1491,7 +1532,7 @@ data.head()
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:1313/teaching/python/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;http://localhost:40451/teaching/python/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
@@ -1568,9 +1609,9 @@ data.head()
     
     <item>
       <title>✅ Manage your projects</title>
-      <link>http://localhost:1313/post/project-management/</link>
+      <link>http://localhost:40451/post/project-management/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/project-management/</guid>
+      <guid>http://localhost:40451/post/project-management/</guid>
       <description>&lt;p&gt;Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!&lt;/p&gt;
 &lt;h2 id=&#34;ideation&#34;&gt;Ideation&lt;/h2&gt;
 &lt;p&gt;Hugo Blox supports a Markdown extension for mindmaps.&lt;/p&gt;
@@ -1643,18 +1684,18 @@ Parallel 4   :         des6, after des4, 1d
     
     <item>
       <title>Discontinuous Galerkin Methods</title>
-      <link>http://localhost:1313/project/dg/</link>
+      <link>http://localhost:40451/project/dg/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/dg/</guid>
+      <guid>http://localhost:40451/project/dg/</guid>
       <description>&lt;p&gt;A high-performance computing project leveraging the Discontinuous Galerkin (DG) method to achieve superconvergence in gravitational wave simulations through efficient computational modeling.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>http://localhost:1313/publication/preprint/</link>
+      <link>http://localhost:40451/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/preprint/</guid>
-      <description>&lt;p&gt;This work is driven by the results in my &lt;a href=&#34;http://localhost:1313/publication/conference-paper/&#34;&gt;previous paper&lt;/a&gt; on LLMs.&lt;/p&gt;
+      <guid>http://localhost:40451/publication/preprint/</guid>
+      <description>&lt;p&gt;This work is driven by the results in my &lt;a href=&#34;http://localhost:40451/publication/conference-paper/&#34;&gt;previous paper&lt;/a&gt; on LLMs.&lt;/p&gt;
 &lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -1667,9 +1708,9 @@ Parallel 4   :         des6, after des4, 1d
     
     <item>
       <title>An example journal article</title>
-      <link>http://localhost:1313/publication/journal-article/</link>
+      <link>http://localhost:40451/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/journal-article/</guid>
+      <guid>http://localhost:40451/publication/journal-article/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -1688,9 +1729,9 @@ Parallel 4   :         des6, after des4, 1d
     
     <item>
       <title>An example conference paper</title>
-      <link>http://localhost:1313/publication/conference-paper/</link>
+      <link>http://localhost:40451/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/conference-paper/</guid>
+      <guid>http://localhost:40451/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
