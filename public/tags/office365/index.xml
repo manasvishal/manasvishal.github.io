@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Office365 | Manas Vishal</title>
-    <link>http://localhost:40451/tags/office365/</link>
-      <atom:link href="http://localhost:40451/tags/office365/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/office365/</link>
+      <atom:link href="http://localhost:1313/tags/office365/index.xml" rel="self" type="application/rss+xml" />
     <description>Office365</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 16 Jul 2025 09:00:00 -0400</lastBuildDate>
     <image>
-      <url>http://localhost:40451/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>Office365</title>
-      <link>http://localhost:40451/tags/office365/</link>
+      <link>http://localhost:1313/tags/office365/</link>
     </image>
     
     <item>
       <title>How to Set Up Your UMassD Email on Linux with Evolution &amp; Exchange Online</title>
-      <link>http://localhost:40451/post/umassd-email-linux/</link>
+      <link>http://localhost:1313/post/umassd-email-linux/</link>
       <pubDate>Wed, 16 Jul 2025 09:00:00 -0400</pubDate>
-      <guid>http://localhost:40451/post/umassd-email-linux/</guid>
+      <guid>http://localhost:1313/post/umassd-email-linux/</guid>
       <description>&lt;p&gt;As an Linux user at UMass Dartmouth, you might find yourself frustrated by keep opening a browser tab to monitor your emails. If you are in the neef of seamless access to your UMassD Office 365 email. This guide walks you through installing and configuring GNOME Evolution with the Evolution‑EWS plugin so you can send and receive mail with your &lt;code&gt;@umassd.edu&lt;/code&gt; account.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
@@ -36,7 +36,21 @@
 &lt;p&gt;&lt;strong&gt;Debian / Ubuntu&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install evolution evolution-ews
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;setting-up-your-umassd-email-account&#34;&gt;Setting Up Your UMassD Email Account&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Evolution.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;File &amp;gt; New &amp;gt; Mail Account&lt;/strong&gt;, then click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter your name and UMassD email address, uncheck &lt;strong&gt;Look up mail server details&amp;hellip;&lt;/strong&gt;, then click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Change &lt;strong&gt;Server Type&lt;/strong&gt; to &lt;strong&gt;Exchange Web Services&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter your UMassD email address as your username.&lt;/li&gt;
+&lt;li&gt;Enter &lt;code&gt;https://outlook.office365.com/EWS/Exchange.asmx&lt;/code&gt; as the &lt;strong&gt;Host URL&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Change the &lt;strong&gt;Authentication type&lt;/strong&gt; to &lt;strong&gt;OAuth2 (Office365)&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Fetch URL&lt;/strong&gt; button, which will ask for your password and, if successful, fill the &lt;strong&gt;OAB URL&lt;/strong&gt; field.&lt;/li&gt;
+&lt;li&gt;Complete the rest of the steps in the account setup wizard as you see fit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You should have the UMassD email account setup now.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
