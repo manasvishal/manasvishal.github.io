@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manim | Manas Vishal</title>
-    <link>http://localhost:1313/tags/manim/</link>
-      <atom:link href="http://localhost:1313/tags/manim/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:44901/tags/manim/</link>
+      <atom:link href="http://localhost:44901/tags/manim/index.xml" rel="self" type="application/rss+xml" />
     <description>Manim</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:44901/media/icon_hu12677917447461260747.png</url>
       <title>Manim</title>
-      <link>http://localhost:1313/tags/manim/</link>
+      <link>http://localhost:44901/tags/manim/</link>
     </image>
     
     <item>
       <title>💻 How to use manim on an HPC using containers</title>
-      <link>http://localhost:1313/post/manim-hpc-container/</link>
+      <link>http://localhost:44901/post/manim-hpc-container/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/manim-hpc-container/</guid>
+      <guid>http://localhost:44901/post/manim-hpc-container/</guid>
       <description>&lt;h2 id=&#34;example-output&#34;&gt;Example Output&lt;/h2&gt;
 &lt;p&gt;Below is an example of a Fourier Square Wave animation created using Manim:&lt;/p&gt;
 &lt;p&gt;This animation demonstrates how a square wave can be approximated by summing the first few terms of its Fourier series. The visualization helps in understanding the concept of Fourier series and how complex waveforms can be constructed from simpler sine and cosine waves.&lt;/p&gt;
@@ -39,7 +39,7 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Fourier Square Wave Animation&#34;
-           src=&#34;http://localhost:1313/post/manim-hpc-container/FourierSquareWave.gif&#34;
+           src=&#34;http://localhost:44901/post/manim-hpc-container/FourierSquareWave.gif&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
