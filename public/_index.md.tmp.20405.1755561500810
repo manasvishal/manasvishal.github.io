@@ -1,0 +1,183 @@
+---
+# Leave the homepage title empty to use the site title
+title: ""
+date: 2022-10-24
+type: landing
+
+design:
+  # Default section spacing
+  spacing: "6rem"
+
+sections:  
+
+  - block: resume-biography-3
+    content:
+      # Choose a user profile to display (a folder name within `content/authors/`)
+      username: admin
+      text: ""
+      # Show a call-to-action button under your biography? (optional)
+      button:
+        text: Download CV
+        # url: https://texlive2020.latexonline.cc/compile?git=https://github.com/manasvishal/CV_ManasVishal&target=CV_Manas.tex&command=xelatex
+        # url: https://github.com/manasvishal/CV_ManasVishal/blob/pdflatex/CV_Manas.pdf
+        url: "uploads/CV_Manas.pdf"
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          filename: use-svg-as-background-image-particle-strokes.svg
+          filters:
+            brightness: 0.7
+          size: cover
+          position: center
+          parallax: true
+
+  - block: markdown
+    content:
+      title: ""
+      text: |-
+        <div style="text-align: center; margin-top: -2rem; margin-bottom: 2rem;">
+          <a href="uploads/resume.pdf" target="_blank" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+            <svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+              <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+            </svg>
+            Download Resume
+          </a>
+        </div>
+  
+    # design:
+    #   css_class: light
+    #   background:
+    #     color: black
+    #     image:
+    #       # Add your image background to `assets/media/`.
+    #       filename: stacked-peaks.svg
+    #       # filename: morphing-animation-trends.svg
+    #       filters:
+    #         brightness: 1.0
+    #       size: cover
+    #       position: center
+    #       parallax: false
+
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          # Add your image background to `assets/media/`.
+          # filename: stacked-peaks.svg
+          filename: use-svg-as-background-image-particle-strokes.svg
+          filters:
+            brightness: 0.7
+          size: cover
+          position: center
+          parallax: true
+      
+  - block: markdown
+    content:
+      title: '📚 My Research'
+      subtitle: ''
+      text: |-
+        My research explores the computational frontiers of gravitational wave science, focusing on high-performance computing and simulation techniques to model astrophysical phenomena, particularly black holes. Under the guidance of Dr. Scott Field at UMass Dartmouth, I work on advancing methods for gravitational wave analysis, contributing to projects relevant to observatories like LIGO and the space-based LISA mission. 
+        
+        A core area of my research involves developing algorithms that enhance the accuracy and efficiency of complex simulations, leveraging GPU acceleration and distributed computing. By coupling hyperboloidal compactification with nodal DG schemes, my work aims to improve superconvergence in simulations, allowing for more precise insights into the dynamics of gravitational waves. This research not only addresses fundamental questions in astrophysics but also expands the computational capabilities available for data-intensive scientific inquiries.
+        
+        Please reach out to collaborate 😃
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          # Add your image background to `assets/media/`.
+          # filename: stacked-peaks.svg
+          filename: use-svg-as-background-image-particle-strokes.svg
+          filters:
+            brightness: 0.7
+          size: cover
+          position: center
+          parallax: true
+
+
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publication
+  #       featured_only: true
+  #   design:
+  #     view: article-grid
+  #     columns: 2
+  # - block: collection
+  #   content:
+  #     title: Recent Publications
+  #     text: ""
+  #     filters:
+  #       folders:
+  #         - publication
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - event
+  #   design:
+  #     view: article-grid
+  #     columns: 1
+  # - block: collection
+  #   id: news
+  #   content:
+  #     title: Recent News
+  #     subtitle: ''
+  #     text: ''
+  #     # Page type to display. E.g. post, talk, publication...
+  #     page_type: post
+  #     # Choose how many pages you would like to display (0 = all pages)
+  #     count: 5
+  #     # Filter on criteria
+  #     filters:
+  #       author: ""
+  #       category: ""
+  #       tag: ""
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ""
+  #     # Choose how many pages you would like to offset by
+  #     offset: 0
+  #     # Page order: descending (desc) or ascending (asc) date.
+  #     order: desc
+  #   design:
+  #     # Choose a layout view
+  #     view: date-title-summary
+  #     # Reduce spacing
+  #     spacing:
+  #       padding: [0, 0, 0, 0]
+  # - block: cta-card
+  #   demo: true # Only display this section in the Hugo Blox Builder demo site
+  #   content:
+  #     title: 👉 Build your own academic website like this
+  #     text: |-
+  #       This site is generated by Hugo Blox Builder - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
+
+  #       <a class="github-button" href="https://github.com/HugoBlox/hugo-blox-builder" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/hugo-blox-builder on GitHub">Star</a>
+
+  #       Easily build anything with blocks - no-code required!
+        
+  #       From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
+  #     button:
+  #       text: Get Started
+  #       url: https://hugoblox.com/templates/
+  #   design:
+  #     card:
+  #       # Card background color (CSS class)
+  #       css_class: "bg-primary-700"
+  #       css_style: ""
+---

@@ -14,42 +14,41 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-      text: ""
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        # url: https://texlive2020.latexonline.cc/compile?git=https://github.com/manasvishal/CV_ManasVishal&target=CV_Manas.tex&command=xelatex
-        # url: https://github.com/manasvishal/CV_ManasVishal/blob/pdflatex/CV_Manas.pdf
-        url: "uploads/CV_Manas.pdf"
-  
-    # design:
-    #   css_class: light
-    #   background:
-    #     color: black
-    #     image:
-    #       # Add your image background to `assets/media/`.
-    #       filename: stacked-peaks.svg
-    #       # filename: morphing-animation-trends.svg
-    #       filters:
-    #         brightness: 1.0
-    #       size: cover
-    #       position: center
-    #       parallax: false
-
+      text: |-
+        ## About Me
+        <div style=" display: inline-block;transform-origin: bottom right; margin-top: -10px; animation: wave 1s infinite linear;">
+            👋 
+        </div> 
+        Hello! Manas Vishal is a PhD candidate in Computational Sciences and Engineering at UMass Dartmouth, specializing in gravitational wave modeling and high-performance computing. With a background in Physics from IISER Kolkata, his work advances gravitational wave science, focusing on black hole simulations and data-intensive research. Beyond academia, he enjoys coding, photography, and exploring history and geopolitics.
+        
+        <div style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap;">
+          <a href="uploads/CV_Manas.pdf" target="_blank" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+            <svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+              <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+            </svg>
+            Download CV
+          </a>
+          <a href="uploads/resume.pdf" target="_blank" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+            <svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+              <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+            </svg>
+            Download Resume
+          </a>
+        </div>
     design:
       css_class: dark
       background:
         color: black
         image:
-          # Add your image background to `assets/media/`.
-          # filename: stacked-peaks.svg
           filename: use-svg-as-background-image-particle-strokes.svg
           filters:
             brightness: 0.7
           size: cover
           position: center
           parallax: true
-      
+
   - block: markdown
     content:
       title: '📚 My Research'

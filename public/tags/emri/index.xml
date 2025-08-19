@@ -2,29 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EMRI | Manas Vishal</title>
-    <link>http://localhost:44901/tags/emri/</link>
-      <atom:link href="http://localhost:44901/tags/emri/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/emri/</link>
+      <atom:link href="http://localhost:1313/tags/emri/index.xml" rel="self" type="application/rss+xml" />
     <description>EMRI</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 25 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:44901/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>EMRI</title>
-      <link>http://localhost:44901/tags/emri/</link>
+      <link>http://localhost:1313/tags/emri/</link>
     </image>
     
     <item>
+      <title>Superconvergence</title>
+      <link>http://localhost:1313/project/superconvergence/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/superconvergence/</guid>
+      <description>&lt;p&gt;A high-performance computing project leveraging the Discontinuous Galerkin (DG) method to achieve superconvergence in gravitational wave simulations through efficient computational modeling.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>EMRI/BHPTNR Surrogates</title>
-      <link>http://localhost:44901/project/surrogates/</link>
+      <link>http://localhost:1313/project/surrogates/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44901/project/surrogates/</guid>
+      <guid>http://localhost:1313/project/surrogates/</guid>
       <description>&lt;p&gt;The BHPTNRSurrogate(s) package provides access to a family of surrogate gravitational waveform models built on waveforms generated with point-particle black hole perturbation theory (ppBHPT) framework. These models extend from comparable mass-ratio to large mass-ratio regimes and are calibrated to numerical relativity (NR) waveforms in the comprable-mass-ratio regime.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Discontinuous Galerkin Methods</title>
-      <link>http://localhost:44901/project/dg/</link>
+      <link>http://localhost:1313/project/dg/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44901/project/dg/</guid>
+      <guid>http://localhost:1313/project/dg/</guid>
       <description>&lt;p&gt;A high-performance computing project leveraging the Discontinuous Galerkin (DG) method to achieve superconvergence in gravitational wave simulations through efficient computational modeling.&lt;/p&gt;</description>
     </item>
     

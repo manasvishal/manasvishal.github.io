@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo | Manas Vishal</title>
-    <link>http://localhost:44901/tags/hugo/</link>
-      <atom:link href="http://localhost:44901/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/hugo/</link>
+      <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <description>Hugo</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 16 Jul 2025 09:00:00 -0400</lastBuildDate>
     <image>
-      <url>http://localhost:44901/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>Hugo</title>
-      <link>http://localhost:44901/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
     </image>
     
     <item>
       <title>How to Set Up Your UMassD Email on Linux with Evolution &amp; Exchange Online</title>
-      <link>http://localhost:44901/post/umassd-email-linux/</link>
+      <link>http://localhost:1313/post/umassd-email-linux/</link>
       <pubDate>Wed, 16 Jul 2025 09:00:00 -0400</pubDate>
-      <guid>http://localhost:44901/post/umassd-email-linux/</guid>
+      <guid>http://localhost:1313/post/umassd-email-linux/</guid>
       <description>&lt;p&gt;As an Linux user at UMass Dartmouth, you might find yourself frustrated by keep opening a browser tab to monitor your emails. If you are in the neef of seamless access to your UMassD Office 365 email. This guide walks you through installing and configuring GNOME Evolution with the Evolution‑EWS plugin so you can send and receive mail with your &lt;code&gt;@umassd.edu&lt;/code&gt; account.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
@@ -55,9 +55,9 @@
     
     <item>
       <title>🌐 Personal Portfolio Website Workshop!</title>
-      <link>http://localhost:44901/post/website-building-workshop/</link>
+      <link>http://localhost:1313/post/website-building-workshop/</link>
       <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44901/post/website-building-workshop/</guid>
+      <guid>http://localhost:1313/post/website-building-workshop/</guid>
       <description>&lt;h1 id=&#34;welcome-to-the-personal-portfolio-website-workshop-&#34;&gt;Welcome to the Personal Portfolio Website Workshop! 👋&lt;/h1&gt;
 &lt;p&gt;Hello, fellow PhD students! 🎓&lt;/p&gt;
 &lt;p&gt;This repository is here to help you build your personal academic portfolio website. By the end of this guide, you’ll have a beautiful, professional webpage to showcase your research, publications, and achievements. We’ll use &lt;strong&gt;HTML5 UP templates&lt;/strong&gt;, &lt;strong&gt;Jekyll&lt;/strong&gt;, or &lt;strong&gt;Hugo&lt;/strong&gt; to create a static website and deploy it to &lt;strong&gt;GitHub Pages&lt;/strong&gt; for free hosting.&lt;/p&gt;
@@ -240,9 +240,9 @@
     
     <item>
       <title>📈 Communicate your results effectively with the best data visualizations</title>
-      <link>http://localhost:44901/post/data-visualization/</link>
+      <link>http://localhost:1313/post/data-visualization/</link>
       <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44901/post/data-visualization/</guid>
+      <guid>http://localhost:1313/post/data-visualization/</guid>
       <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
 &lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
 &lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
@@ -253,7 +253,7 @@
 
 
 
-&lt;div id=&#34;chart-682937451&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-589173642&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -271,7 +271,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-682937451&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-589173642&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -450,9 +450,9 @@ Crash --&gt; [*]
     
     <item>
       <title>👩🏼‍🏫 Teach academic courses</title>
-      <link>http://localhost:44901/post/teach-courses/</link>
+      <link>http://localhost:1313/post/teach-courses/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44901/post/teach-courses/</guid>
+      <guid>http://localhost:1313/post/teach-courses/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -505,7 +505,7 @@ Crash --&gt; [*]
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:44901/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
