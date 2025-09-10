@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag2 | Manas Vishal</title>
-    <link>http://localhost:1313/tags/tag2/</link>
-      <atom:link href="http://localhost:1313/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:40359/tags/tag2/</link>
+      <atom:link href="http://localhost:40359/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     <description>Tag2</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 10 Nov 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:40359/media/icon_hu12677917447461260747.png</url>
       <title>Tag2</title>
-      <link>http://localhost:1313/tags/tag2/</link>
+      <link>http://localhost:40359/tags/tag2/</link>
     </image>
     
     <item>
       <title>Template Post for Hugo</title>
-      <link>http://localhost:1313/post/template-post/</link>
+      <link>http://localhost:40359/post/template-post/</link>
       <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/template-post/</guid>
+      <guid>http://localhost:40359/post/template-post/</guid>
       <description>&lt;h1 id=&#34;main-title&#34;&gt;Main title&lt;/h1&gt;
 &lt;h3 id=&#34;add-more-things&#34;&gt;add more things&lt;/h3&gt;
 </description>

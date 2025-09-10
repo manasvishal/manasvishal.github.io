@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matlab | Manas Vishal</title>
-    <link>http://localhost:1313/tags/matlab/</link>
-      <atom:link href="http://localhost:1313/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:40359/tags/matlab/</link>
+      <atom:link href="http://localhost:40359/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
     <description>Matlab</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:40359/media/icon_hu12677917447461260747.png</url>
       <title>Matlab</title>
-      <link>http://localhost:1313/tags/matlab/</link>
+      <link>http://localhost:40359/tags/matlab/</link>
     </image>
     
     <item>
       <title>Tricks to get extended precision in Julia/Matlab</title>
-      <link>http://localhost:1313/post/doubledouble/</link>
+      <link>http://localhost:40359/post/doubledouble/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/doubledouble/</guid>
+      <guid>http://localhost:40359/post/doubledouble/</guid>
       <description>&lt;p&gt;In many scientific and engineering applications, double-precision floating point (i.e., &lt;code&gt;Float64&lt;/code&gt;) is insufficient for achieving the desired level of accuracy. This is especially true in simulations involving extreme scales, such as black hole perturbation theory or gravitational wave modeling, where small numerical errors can propagate and dominate the result. Here are some &lt;strong&gt;tricks and tools&lt;/strong&gt; to achieve &lt;strong&gt;extended precision&lt;/strong&gt; in &lt;strong&gt;Julia&lt;/strong&gt; and &lt;strong&gt;MATLAB&lt;/strong&gt;, with examples from my own research experience.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-why-extended-precision&#34;&gt;🔬 Why Extended Precision?&lt;/h2&gt;
