@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python | Manas Vishal</title>
-    <link>http://localhost:40359/tags/python/</link>
-      <atom:link href="http://localhost:40359/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/python/</link>
+      <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:40359/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>Python</title>
-      <link>http://localhost:40359/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
     </image>
     
     <item>
       <title>💻 How to use manim on an HPC using containers</title>
-      <link>http://localhost:40359/post/manim-hpc-container/</link>
+      <link>http://localhost:1313/post/manim-hpc-container/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/manim-hpc-container/</guid>
+      <guid>http://localhost:1313/post/manim-hpc-container/</guid>
       <description>&lt;h2 id=&#34;example-output&#34;&gt;Example Output&lt;/h2&gt;
 &lt;p&gt;Below is an example of a Fourier Square Wave animation created using Manim:&lt;/p&gt;
 &lt;p&gt;This animation demonstrates how a square wave can be approximated by summing the first few terms of its Fourier series. The visualization helps in understanding the concept of Fourier series and how complex waveforms can be constructed from simpler sine and cosine waves.&lt;/p&gt;
@@ -39,7 +39,7 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Fourier Square Wave Animation&#34;
-           src=&#34;http://localhost:40359/post/manim-hpc-container/FourierSquareWave.gif&#34;
+           src=&#34;http://localhost:1313/post/manim-hpc-container/FourierSquareWave.gif&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -195,9 +195,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>Learn Python</title>
-      <link>http://localhost:40359/teaching/python/</link>
+      <link>http://localhost:1313/teaching/python/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/teaching/python/</guid>
+      <guid>http://localhost:1313/teaching/python/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -244,7 +244,7 @@ Manim provides an official Docker image. Use the following command to pull the D
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:40359/teaching/python/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/teaching/python/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;

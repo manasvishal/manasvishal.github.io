@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talk slides | Manas Vishal</title>
-    <link>http://localhost:40359/slides/</link>
-      <atom:link href="http://localhost:40359/slides/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/slides/</link>
+      <atom:link href="http://localhost:1313/slides/index.xml" rel="self" type="application/rss+xml" />
     <description>Talk slides</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
   </channel>

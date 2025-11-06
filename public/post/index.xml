@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog | Manas Vishal</title>
-    <link>http://localhost:40359/post/</link>
-      <atom:link href="http://localhost:40359/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/post/</link>
+      <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 16 Jul 2025 09:00:00 -0400</lastBuildDate>
     <image>
-      <url>http://localhost:40359/media/icon_hu12677917447461260747.png</url>
+      <url>http://localhost:1313/media/icon_hu12677917447461260747.png</url>
       <title>Blog</title>
-      <link>http://localhost:40359/post/</link>
+      <link>http://localhost:1313/post/</link>
     </image>
     
     <item>
       <title>How to Set Up Your UMassD Email on Linux with Evolution &amp; Exchange Online</title>
-      <link>http://localhost:40359/post/umassd-email-linux/</link>
+      <link>http://localhost:1313/post/umassd-email-linux/</link>
       <pubDate>Wed, 16 Jul 2025 09:00:00 -0400</pubDate>
-      <guid>http://localhost:40359/post/umassd-email-linux/</guid>
+      <guid>http://localhost:1313/post/umassd-email-linux/</guid>
       <description>&lt;p&gt;As an Linux user at UMass Dartmouth, you might find yourself frustrated by keep opening a browser tab to monitor your emails. If you are in the neef of seamless access to your UMassD Office 365 email. This guide walks you through installing and configuring GNOME Evolution with the Evolution‑EWS plugin so you can send and receive mail with your &lt;code&gt;@umassd.edu&lt;/code&gt; account.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
@@ -55,9 +55,9 @@
     
     <item>
       <title>Tricks to get extended precision in Julia/Matlab</title>
-      <link>http://localhost:40359/post/doubledouble/</link>
+      <link>http://localhost:1313/post/doubledouble/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/doubledouble/</guid>
+      <guid>http://localhost:1313/post/doubledouble/</guid>
       <description>&lt;p&gt;In many scientific and engineering applications, double-precision floating point (i.e., &lt;code&gt;Float64&lt;/code&gt;) is insufficient for achieving the desired level of accuracy. This is especially true in simulations involving extreme scales, such as black hole perturbation theory or gravitational wave modeling, where small numerical errors can propagate and dominate the result. Here are some &lt;strong&gt;tricks and tools&lt;/strong&gt; to achieve &lt;strong&gt;extended precision&lt;/strong&gt; in &lt;strong&gt;Julia&lt;/strong&gt; and &lt;strong&gt;MATLAB&lt;/strong&gt;, with examples from my own research experience.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-why-extended-precision&#34;&gt;🔬 Why Extended Precision?&lt;/h2&gt;
@@ -145,9 +145,9 @@
     
     <item>
       <title>Github Action to Build PDF using pdflatex</title>
-      <link>http://localhost:40359/post/github-build-pdf/</link>
+      <link>http://localhost:1313/post/github-build-pdf/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/github-build-pdf/</guid>
+      <guid>http://localhost:1313/post/github-build-pdf/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Build PDF and Push to Orphan Branch&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -219,9 +219,9 @@
     
     <item>
       <title>VScode config file</title>
-      <link>http://localhost:40359/post/vscode-settings-json/</link>
+      <link>http://localhost:1313/post/vscode-settings-json/</link>
       <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/vscode-settings-json/</guid>
+      <guid>http://localhost:1313/post/vscode-settings-json/</guid>
       <description>&lt;h3 id=&#34;these-configs-help-me-easily-navigate-vscode&#34;&gt;These configs help me easily navigate VScode.&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;remote.SSH.remotePlatform&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -327,9 +327,9 @@
     
     <item>
       <title>💻 How to use manim on an HPC using containers</title>
-      <link>http://localhost:40359/post/manim-hpc-container/</link>
+      <link>http://localhost:1313/post/manim-hpc-container/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/manim-hpc-container/</guid>
+      <guid>http://localhost:1313/post/manim-hpc-container/</guid>
       <description>&lt;h2 id=&#34;example-output&#34;&gt;Example Output&lt;/h2&gt;
 &lt;p&gt;Below is an example of a Fourier Square Wave animation created using Manim:&lt;/p&gt;
 &lt;p&gt;This animation demonstrates how a square wave can be approximated by summing the first few terms of its Fourier series. The visualization helps in understanding the concept of Fourier series and how complex waveforms can be constructed from simpler sine and cosine waves.&lt;/p&gt;
@@ -352,7 +352,7 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Fourier Square Wave Animation&#34;
-           src=&#34;http://localhost:40359/post/manim-hpc-container/FourierSquareWave.gif&#34;
+           src=&#34;http://localhost:1313/post/manim-hpc-container/FourierSquareWave.gif&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -508,9 +508,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>💻 My most used code snippets</title>
-      <link>http://localhost:40359/post/my-code-snippets/</link>
+      <link>http://localhost:1313/post/my-code-snippets/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/my-code-snippets/</guid>
+      <guid>http://localhost:1313/post/my-code-snippets/</guid>
       <description>&lt;h2 id=&#34;list-of-bash-commands&#34;&gt;List of Bash Commands&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;This command will print out the top 10 folders that occupy the most space in Gigabytes&lt;/li&gt;
@@ -569,9 +569,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>🤝 Indians in trade across Asia</title>
-      <link>http://localhost:40359/post/indian-trade-asia/</link>
+      <link>http://localhost:1313/post/indian-trade-asia/</link>
       <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/indian-trade-asia/</guid>
+      <guid>http://localhost:1313/post/indian-trade-asia/</guid>
       <description>&lt;p&gt;Collecting some sources I found across internet about Indians and their presence across Asia trading with locals.&lt;/p&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
 &lt;h3 id=&#34;indians-in-central-asia&#34;&gt;Indians in Central Asia:&lt;/h3&gt;
@@ -595,9 +595,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>🌐 Personal Portfolio Website Workshop!</title>
-      <link>http://localhost:40359/post/website-building-workshop/</link>
+      <link>http://localhost:1313/post/website-building-workshop/</link>
       <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/website-building-workshop/</guid>
+      <guid>http://localhost:1313/post/website-building-workshop/</guid>
       <description>&lt;h1 id=&#34;welcome-to-the-personal-portfolio-website-workshop-&#34;&gt;Welcome to the Personal Portfolio Website Workshop! 👋&lt;/h1&gt;
 &lt;p&gt;Hello, fellow PhD students! 🎓&lt;/p&gt;
 &lt;p&gt;This repository is here to help you build your personal academic portfolio website. By the end of this guide, you’ll have a beautiful, professional webpage to showcase your research, publications, and achievements. We’ll use &lt;strong&gt;HTML5 UP templates&lt;/strong&gt;, &lt;strong&gt;Jekyll&lt;/strong&gt;, or &lt;strong&gt;Hugo&lt;/strong&gt; to create a static website and deploy it to &lt;strong&gt;GitHub Pages&lt;/strong&gt; for free hosting.&lt;/p&gt;
@@ -780,9 +780,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>Template Post for Hugo</title>
-      <link>http://localhost:40359/post/template-post/</link>
+      <link>http://localhost:1313/post/template-post/</link>
       <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/template-post/</guid>
+      <guid>http://localhost:1313/post/template-post/</guid>
       <description>&lt;h1 id=&#34;main-title&#34;&gt;Main title&lt;/h1&gt;
 &lt;h3 id=&#34;add-more-things&#34;&gt;add more things&lt;/h3&gt;
 </description>
@@ -790,9 +790,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>🎉 Easily create your own simple yet highly customizable blog</title>
-      <link>http://localhost:40359/post/get-started/</link>
+      <link>http://localhost:1313/post/get-started/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/get-started/</guid>
+      <guid>http://localhost:1313/post/get-started/</guid>
       <description>&lt;p&gt;Welcome 👋&lt;/p&gt;
 
 
@@ -876,9 +876,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>🧠 Sharpen your thinking with a second brain</title>
-      <link>http://localhost:40359/post/second-brain/</link>
+      <link>http://localhost:1313/post/second-brain/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/second-brain/</guid>
+      <guid>http://localhost:1313/post/second-brain/</guid>
       <description>&lt;p&gt;Create a personal knowledge base and share your knowledge with your peers.&lt;/p&gt;
 &lt;p&gt;Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.&lt;/p&gt;
 &lt;p&gt;Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.&lt;/p&gt;
@@ -988,9 +988,9 @@ Manim provides an official Docker image. Use the following command to pull the D
     
     <item>
       <title>📈 Communicate your results effectively with the best data visualizations</title>
-      <link>http://localhost:40359/post/data-visualization/</link>
+      <link>http://localhost:1313/post/data-visualization/</link>
       <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/data-visualization/</guid>
+      <guid>http://localhost:1313/post/data-visualization/</guid>
       <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
 &lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
 &lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
@@ -1001,7 +1001,7 @@ Manim provides an official Docker image. Use the following command to pull the D
 
 
 
-&lt;div id=&#34;chart-625439187&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-527968314&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1019,7 +1019,7 @@ Manim provides an official Docker image. Use the following command to pull the D
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-625439187&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-527968314&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1198,9 +1198,9 @@ Crash --&gt; [*]
     
     <item>
       <title>👩🏼‍🏫 Teach academic courses</title>
-      <link>http://localhost:40359/post/teach-courses/</link>
+      <link>http://localhost:1313/post/teach-courses/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/teach-courses/</guid>
+      <guid>http://localhost:1313/post/teach-courses/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -1253,7 +1253,7 @@ Crash --&gt; [*]
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:40359/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
@@ -1312,9 +1312,9 @@ data.head()
     
     <item>
       <title>✅ Manage your projects</title>
-      <link>http://localhost:40359/post/project-management/</link>
+      <link>http://localhost:1313/post/project-management/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:40359/post/project-management/</guid>
+      <guid>http://localhost:1313/post/project-management/</guid>
       <description>&lt;p&gt;Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!&lt;/p&gt;
 &lt;h2 id=&#34;ideation&#34;&gt;Ideation&lt;/h2&gt;
 &lt;p&gt;Hugo Blox supports a Markdown extension for mindmaps.&lt;/p&gt;

@@ -2,300 +2,300 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:40359/event/example/</loc>
+    <loc>http://localhost:1313/event/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/event/</loc>
+    <loc>http://localhost:1313/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/email/</loc>
+    <loc>http://localhost:1313/tags/email/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/evolution/</loc>
+    <loc>http://localhost:1313/tags/evolution/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/umassd-email-linux/</loc>
+    <loc>http://localhost:1313/post/umassd-email-linux/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/hpc/</loc>
+    <loc>http://localhost:1313/tags/hpc/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/office365/</loc>
+    <loc>http://localhost:1313/tags/office365/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/umassd/</loc>
+    <loc>http://localhost:1313/tags/umassd/</loc>
     <lastmod>2025-07-16T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/code/</loc>
+    <loc>http://localhost:1313/tags/code/</loc>
     <lastmod>2025-04-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/julia/</loc>
+    <loc>http://localhost:1313/tags/julia/</loc>
     <lastmod>2025-04-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/matlab/</loc>
+    <loc>http://localhost:1313/tags/matlab/</loc>
     <lastmod>2025-04-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/doubledouble/</loc>
+    <loc>http://localhost:1313/post/doubledouble/</loc>
     <lastmod>2025-04-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/dg/</loc>
+    <loc>http://localhost:1313/tags/dg/</loc>
     <lastmod>2025-03-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/emri/</loc>
+    <loc>http://localhost:1313/tags/emri/</loc>
     <lastmod>2025-03-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/physics/</loc>
+    <loc>http://localhost:1313/tags/physics/</loc>
     <lastmod>2025-03-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/project/</loc>
+    <loc>http://localhost:1313/project/</loc>
     <lastmod>2025-03-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/superconvergence/</loc>
+    <loc>http://localhost:1313/tags/superconvergence/</loc>
     <lastmod>2025-03-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/project/superconvergence/</loc>
+    <loc>http://localhost:1313/project/superconvergence/</loc>
     <lastmod>2025-03-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/github/</loc>
+    <loc>http://localhost:1313/tags/github/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/github-build-pdf/</loc>
+    <loc>http://localhost:1313/post/github-build-pdf/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/programming/</loc>
+    <loc>http://localhost:1313/tags/programming/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/vscode/</loc>
+    <loc>http://localhost:1313/tags/vscode/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/vscode-settings-json/</loc>
+    <loc>http://localhost:1313/post/vscode-settings-json/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/manim-hpc-container/</loc>
+    <loc>http://localhost:1313/post/manim-hpc-container/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/manim/</loc>
+    <loc>http://localhost:1313/tags/manim/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/my-code-snippets/</loc>
+    <loc>http://localhost:1313/post/my-code-snippets/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/history/</loc>
+    <loc>http://localhost:1313/tags/history/</loc>
     <lastmod>2024-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/india/</loc>
+    <loc>http://localhost:1313/tags/india/</loc>
     <lastmod>2024-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/trade/</loc>
+    <loc>http://localhost:1313/tags/trade/</loc>
     <lastmod>2024-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/indian-trade-asia/</loc>
+    <loc>http://localhost:1313/post/indian-trade-asia/</loc>
     <lastmod>2024-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/website-building-workshop/</loc>
+    <loc>http://localhost:1313/post/website-building-workshop/</loc>
     <lastmod>2024-11-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/html/</loc>
+    <loc>http://localhost:1313/tags/html/</loc>
     <lastmod>2024-11-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/jekyll/</loc>
+    <loc>http://localhost:1313/tags/jekyll/</loc>
     <lastmod>2024-11-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/phd/</loc>
+    <loc>http://localhost:1313/tags/phd/</loc>
     <lastmod>2024-11-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/tag1/</loc>
+    <loc>http://localhost:1313/tags/tag1/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/tag2/</loc>
+    <loc>http://localhost:1313/tags/tag2/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/template-post/</loc>
+    <loc>http://localhost:1313/post/template-post/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/project/surrogates/</loc>
+    <loc>http://localhost:1313/project/surrogates/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/surrogates/</loc>
+    <loc>http://localhost:1313/tags/surrogates/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/get-started/</loc>
+    <loc>http://localhost:1313/post/get-started/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/academic/</loc>
+    <loc>http://localhost:1313/tags/academic/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/hugo-blox/</loc>
+    <loc>http://localhost:1313/tags/hugo-blox/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/markdown/</loc>
+    <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/second-brain/</loc>
+    <loc>http://localhost:1313/tags/second-brain/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/second-brain/</loc>
+    <loc>http://localhost:1313/post/second-brain/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/data-visualization/</loc>
+    <loc>http://localhost:1313/post/data-visualization/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/teach-courses/</loc>
+    <loc>http://localhost:1313/post/teach-courses/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/experience/</loc>
+    <loc>http://localhost:1313/experience/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/hugo-blox-builder/</loc>
+    <loc>http://localhost:1313/tags/hugo-blox-builder/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/javascript/</loc>
+    <loc>http://localhost:1313/tags/javascript/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/teaching/js/</loc>
+    <loc>http://localhost:1313/teaching/js/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/teaching/python/</loc>
+    <loc>http://localhost:1313/teaching/python/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/teaching/</loc>
+    <loc>http://localhost:1313/teaching/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/post/project-management/</loc>
+    <loc>http://localhost:1313/post/project-management/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/project/dg/</loc>
+    <loc>http://localhost:1313/project/dg/</loc>
     <lastmod>2021-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/publication/preprint/</loc>
+    <loc>http://localhost:1313/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/publication_types/article/</loc>
+    <loc>http://localhost:1313/publication_types/article/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/large-language-models/</loc>
+    <loc>http://localhost:1313/tags/large-language-models/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/publication_types/</loc>
+    <loc>http://localhost:1313/publication_types/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/publication/</loc>
+    <loc>http://localhost:1313/publication/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/publication/journal-article/</loc>
+    <loc>http://localhost:1313/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/publication_types/article-journal/</loc>
+    <loc>http://localhost:1313/publication_types/article-journal/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/tags/source-themes/</loc>
+    <loc>http://localhost:1313/tags/source-themes/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/publication/conference-paper/</loc>
+    <loc>http://localhost:1313/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/publication_types/paper-conference/</loc>
+    <loc>http://localhost:1313/publication_types/paper-conference/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/blackhole/</loc>
+    <loc>http://localhost:1313/blackhole/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/capra28/</loc>
+    <loc>http://localhost:1313/capra28/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:40359/slides/</loc>
+    <loc>http://localhost:1313/slides/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
